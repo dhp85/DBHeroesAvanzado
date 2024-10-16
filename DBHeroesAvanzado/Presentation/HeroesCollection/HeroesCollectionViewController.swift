@@ -7,16 +7,12 @@
 
 import UIKit
 
-protocol HeroesUseCaseProtocol {
-    
-}
-
-final class HeroesUseCase: HeroesUseCaseProtocol {
-    
-}
-
 final class HeroesColletionViewModel {
     
+    let useCase: HeroesUseCaseProtocol
+    init(useCase: HeroesUseCaseProtocol = HeroesUseCase()) {
+        self.useCase = useCase
+    }
 }
 
 class HeroesCollectionViewController: UIViewController {

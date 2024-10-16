@@ -40,7 +40,7 @@ class StoreDataProvider {
 
 extension StoreDataProvider {
     
-    func addhero(heroes: [ApiHero]) {
+    func addhero(heroes: [APIHero]) {
         
         for hero in heroes {
             let newHero = MOHero(context: context)
@@ -69,7 +69,7 @@ extension StoreDataProvider {
         //try? context.count(for: request)
     }
     
-    func addLocation(locations: [ApiLocation]) {
+    func addLocation(locations: [APILocation]) {
         for location in locations {
             let newLocation = MOLocation(context: context)
             newLocation.id = location.id
