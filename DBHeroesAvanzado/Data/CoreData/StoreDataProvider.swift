@@ -9,9 +9,13 @@ import CoreData
 
 class StoreDataProvider {
     
+    static var shared = StoreDataProvider()
+    
     private let persintentContainer: NSPersistentContainer
     private var context: NSManagedObjectContext {
-        return persintentContainer.viewContext
+        let viewContext = persintentContainer.viewContext
+        viewContext.mergePolicy = NSMergePolicy.mergeByPropertyObjectTrump
+        return viewContext
     }
     
     init() {

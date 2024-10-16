@@ -5,12 +5,12 @@
 //  Created by Diego Herreros Parron on 15/10/24.
 //
 
-struct ApiLocation: Codable {
+struct APILocation: Codable {
     let id: String?
     let date: String?
     let latitude: String?
     let longitude: String?
-    let hero: ApiHero?
+    let hero: APIHero?
     
     enum CodingKeys: String, CodingKey {
         case id

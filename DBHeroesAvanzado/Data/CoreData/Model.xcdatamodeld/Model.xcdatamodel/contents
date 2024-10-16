@@ -8,6 +8,11 @@
         <attribute name="photo" optional="YES" attributeType="String"/>
         <relationship name="locations" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDLocation" inverseName="hero" inverseEntity="CDLocation"/>
         <relationship name="transformations" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="CDTransformation" inverseName="hero" inverseEntity="CDTransformation"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="CDLocation" representedClassName="MOLocation" syncable="YES">
         <attribute name="date" optional="YES" attributeType="String"/>
@@ -15,6 +20,11 @@
         <attribute name="latitude" optional="YES" attributeType="String"/>
         <attribute name="longitude" optional="YES" attributeType="String"/>
         <relationship name="hero" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDHero" inverseName="locations" inverseEntity="CDHero"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
     <entity name="CDTransformation" representedClassName="MOTransformation" syncable="YES">
         <attribute name="id" optional="YES" attributeType="String"/>
@@ -22,5 +32,10 @@
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="photo" optional="YES" attributeType="String"/>
         <relationship name="hero" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDHero" inverseName="transformations" inverseEntity="CDHero"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="id"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
     </entity>
 </model>

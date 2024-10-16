@@ -5,7 +5,7 @@
 //  Created by Diego Herreros Parron on 15/10/24.
 //
 
-struct ApiHero: Codable {
+struct APIHero: Codable {
     let id: String?
     let name: String?
     let photo: String?
