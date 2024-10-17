@@ -7,7 +7,13 @@
 
 import Foundation
 
-final class APISession {
+protocol APISessionProtocol {
+    func loadHeros(name: String, completion: @escaping ((Result<[APIHero], APIErrorResponse>) -> Void))
+    func loadLocations(id: String, completion: @escaping ((Result<[APILocation], APIErrorResponse>) -> Void))
+    func loadtransformation(id: String, completion: @escaping ((Result<[APITransformation], APIErrorResponse>) -> Void))
+}
+
+final class APISession: APISessionProtocol {
     
     private let session: URLSession
     private let requestBuilder: APIRequestBuilder

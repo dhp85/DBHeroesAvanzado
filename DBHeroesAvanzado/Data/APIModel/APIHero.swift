@@ -11,5 +11,4 @@ struct APIHero: Codable {
     let photo: String?
     let favorite: Bool?
     let description: String?
-    
 }

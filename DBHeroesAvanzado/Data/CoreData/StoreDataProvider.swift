@@ -47,14 +47,17 @@ extension StoreDataProvider {
             newHero.id = hero.id
             newHero.name = hero.name
             newHero.photo = hero.photo
-            newHero.herodescripcion = hero.description
             newHero.favorite = hero.favorite ?? false
         }
         save()
     }
-    func fetchHeroes(filter: NSPredicate?) -> [MOHero] {
+    
+    
+    func fetchHeroes(filter: NSPredicate?, sortAscending: Bool = true) -> [MOHero] {
         let request = MOHero.fetchRequest()
         request.predicate = filter
+        let sortDescriptor = NSSortDescriptor(keyPath: \MOHero.name, ascending: sortAscending)
+        request.sortDescriptors = [sortDescriptor]
         
         do {
             return try context.fetch(request)
@@ -86,13 +89,13 @@ extension StoreDataProvider {
         }
     }
     
-    func addTransformation(transformations: [MOTransformation]) {
+    func addTransformation(transformations: [APITransformation]) {
         for transformation in transformations {
             let newTransformation = MOTransformation(context: context)
             newTransformation.id = transformation.id
             newTransformation.name = transformation.name
             newTransformation.photo = transformation.photo
-            newTransformation.info = transformation.info
+            newTransformation.info = transformation.description
             
             if let heroId = transformation.hero?.id {
                 let predicate = NSPredicate(format: "id == %@", heroId)
