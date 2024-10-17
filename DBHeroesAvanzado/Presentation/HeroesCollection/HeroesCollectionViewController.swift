@@ -75,6 +75,7 @@ class HeroesCollectionViewController: UIViewController {
         viewModel.loaddata(filter: nil)
     }
     
+    //Establecemos el Binding con el ViewModel para ser notificados cuando cambia el estado.
     private func bind() {
         viewModel.statusHeroes.bind { [weak self] status in
             switch status {

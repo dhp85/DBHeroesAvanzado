@@ -9,6 +9,7 @@ struct APIHero: Codable {
     let id: String?
     let name: String?
     let photo: String?
-    let favorite: Bool?
-    let description: String?
+    var favorite: Bool?
+    let herodescripcion: String?
+
 }

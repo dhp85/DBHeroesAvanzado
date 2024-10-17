@@ -7,10 +7,17 @@
 
 import CoreData
 
+enum TypePersistency {
+    case disk
+    case inMemory
+}
+                            
+
 class StoreDataProvider {
     
     static var shared = StoreDataProvider()
     
+    private let persistency: TypePersistency
     private let persintentContainer: NSPersistentContainer
     private var context: NSManagedObjectContext {
         let viewContext = persintentContainer.viewContext
@@ -18,8 +25,13 @@ class StoreDataProvider {
         return viewContext
     }
     
-    init() {
+    init(persistency: TypePersistency = .disk) {
+        self.persistency = persistency
         self.persintentContainer = NSPersistentContainer(name: "Model")
+        if self.persistency == .inMemory {
+            let persistentStore = persintentContainer.persistentStoreDescriptions.first
+            persistentStore?.url = URL(filePath: "/dev/null")
+        }
         self.persintentContainer.loadPersistentStores { _, error in
             if let error {
                 fatalError("Error loading BBDD: \(error.localizedDescription)")
@@ -47,6 +59,7 @@ extension StoreDataProvider {
             newHero.id = hero.id
             newHero.name = hero.name
             newHero.photo = hero.photo
+            newHero.herodescripcion = hero.herodescripcion
             newHero.favorite = hero.favorite ?? false
         }
         save()
@@ -106,3 +119,4 @@ extension StoreDataProvider {
         
     }
 }
+
