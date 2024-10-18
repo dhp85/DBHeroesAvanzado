@@ -11,12 +11,23 @@ import AVFoundation
 
 class SplashViewController: UIViewController {
 
+    private let viewModel: SplashViewModel
     var player: AVPlayer?
     var playerLayer: AVPlayerLayer?
-
+    
+    init(viewModel: SplashViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: "SplashViewController", bundle: Bundle(for: type(of: self)))
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        bind()
+        viewModel.load()
         // Configurar la ruta del video
         if let path = Bundle.main.path(forResource: "dbanime", ofType:"mp4") {
             let url = URL(fileURLWithPath: path)
@@ -31,6 +42,24 @@ class SplashViewController: UIViewController {
 
         // Silenciar el video
         player?.volume = 0.0 // Establece el volumen a 0 para silenciar
+    }
+    
+    private func bind() {
+        viewModel.onStateChange.bind { [weak self] state in
+            switch state {
+            
+            case .loading:
+                return
+            case .error(reason: let reason):
+                let alert = UIAlertController(title: "Error", message: reason, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default))
+                self?.present(alert,animated: true)
+            case .none:
+                break
+            case .ready:
+                self?.present(LoginViewController(), animated: true)
+            }
+        }
     }
 
     override func viewWillLayoutSubviews() {
@@ -65,7 +94,7 @@ class SplashViewController: UIViewController {
 
     @objc func playerDidReachEnd(notification: Notification) {
         // No reiniciar el video, solo hacer la transición
-        transitionToMainView()
+        transitionEndVideo()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
@@ -87,15 +116,14 @@ class SplashViewController: UIViewController {
         NotificationCenter.default.removeObserver(self) // Eliminar observador
     }
 
-    private func transitionToMainView() {
+    private func transitionEndVideo() {
         // Pausar el reproductor antes de hacer la transición
         player?.pause()
-
-        // Aquí realiza la transición a la vista principal
-        let mainViewController = LoginViewController() // Cambia esto por tu vista principal
-        mainViewController.modalPresentationStyle = .fullScreen
-        present(mainViewController, animated: true) {
-            self.cleanupPlayer() // Limpiar el reproductor después de la presentación
+        self.cleanupPlayer() // Limpiar el reproductor después de la presentación
+        NotificationCenter.default.post(name: .endVideo, object: self)
         }
     }
+
+extension Notification.Name {
+    static let endVideo = Notification.Name("endVideo")
 }

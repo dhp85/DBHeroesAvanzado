@@ -14,6 +14,8 @@
 		F72BD38E2CBE61A8003FAFFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F72BD3832CBE61A8003FAFFB /* Assets.xcassets */; };
 		F72BD3902CBE61A8003FAFFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F72BD3862CBE61A8003FAFFB /* LaunchScreen.storyboard */; };
 		F72BD3942CBE61E8003FAFFB /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F72BD3922CBE61E8003FAFFB /* Model.xcdatamodeld */; };
+		F74808CE2CC2F482006FE7F2 /* SplashViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74808CD2CC2F47A006FE7F2 /* SplashViewModel.swift */; };
+		F74808D02CC2F4C7006FE7F2 /* SplashBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74808CF2CC2F4C0006FE7F2 /* SplashBuilder.swift */; };
 		F75307262CBE6A6E00FD592C /* MOHero+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753071A2CBE6A6E00FD592C /* MOHero+CoreDataClass.swift */; };
 		F75307282CBE6A6E00FD592C /* MOLocation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753071C2CBE6A6E00FD592C /* MOLocation+CoreDataClass.swift */; };
 		F753072A2CBE6A6E00FD592C /* MOTransformation+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F753071E2CBE6A6E00FD592C /* MOTransformation+CoreDataClass.swift */; };
@@ -55,7 +57,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F70450532CC167260059B3D7 /* Model 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "Model 2.xcdatamodel"; sourceTree = "<group>"; };
 		F72BD37E2CBE61A8003FAFFB /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		F72BD37F2CBE61A8003FAFFB /* SplashViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SplashViewController.xib; sourceTree = "<group>"; };
 		F72BD3822CBE61A8003FAFFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +65,8 @@
 		F72BD3852CBE61A8003FAFFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F72BD3872CBE61A8003FAFFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F72BD3932CBE61E8003FAFFB /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		F74808CD2CC2F47A006FE7F2 /* SplashViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewModel.swift; sourceTree = "<group>"; };
+		F74808CF2CC2F4C0006FE7F2 /* SplashBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashBuilder.swift; sourceTree = "<group>"; };
 		F753071A2CBE6A6E00FD592C /* MOHero+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MOHero+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F753071C2CBE6A6E00FD592C /* MOLocation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MOLocation+CoreDataClass.swift"; sourceTree = "<group>"; };
 		F753071E2CBE6A6E00FD592C /* MOTransformation+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MOTransformation+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -150,6 +153,8 @@
 		F72BD3802CBE61A8003FAFFB /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				F74808CF2CC2F4C0006FE7F2 /* SplashBuilder.swift */,
+				F74808CD2CC2F47A006FE7F2 /* SplashViewModel.swift */,
 				F72BD37E2CBE61A8003FAFFB /* SplashViewController.swift */,
 				F72BD37F2CBE61A8003FAFFB /* SplashViewController.xib */,
 			);
@@ -478,11 +483,13 @@
 				F7D848932CBFE9290005B84D /* LoginViewController.swift in Sources */,
 				F75307322CBE708D00FD592C /* APILocation.swift in Sources */,
 				F7C060B12CC100970099D729 /* Binding.swift in Sources */,
+				F74808D02CC2F4C7006FE7F2 /* SplashBuilder.swift in Sources */,
 				F75307342CBE72CE00FD592C /* APITransformation.swift in Sources */,
 				F7D8487F2CBFBCC10005B84D /* APIRequestBuilder.swift in Sources */,
 				F72BD38A2CBE61A8003FAFFB /* SplashViewController.swift in Sources */,
 				F72BD38B2CBE61A8003FAFFB /* AppDelegate.swift in Sources */,
 				F75307A92CBE817E00FD592C /* APISession.swift in Sources */,
+				F74808CE2CC2F482006FE7F2 /* SplashViewModel.swift in Sources */,
 				F72BD38C2CBE61A8003FAFFB /* SceneDelegate.swift in Sources */,
 				F7D848862CBFCAF80005B84D /* HeroesUseCase.swift in Sources */,
 				F7C061222CC10E900099D729 /* HeroesCollectionViewCell.swift in Sources */,
@@ -827,10 +834,9 @@
 		F72BD3922CBE61E8003FAFFB /* Model.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F70450532CC167260059B3D7 /* Model 2.xcdatamodel */,
 				F72BD3932CBE61E8003FAFFB /* Model.xcdatamodel */,
 			);
-			currentVersion = F70450532CC167260059B3D7 /* Model 2.xcdatamodel */;
+			currentVersion = F72BD3932CBE61E8003FAFFB /* Model.xcdatamodel */;
 			path = Model.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
