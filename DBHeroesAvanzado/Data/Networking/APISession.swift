@@ -25,26 +25,30 @@ final class APISession: APISessionProtocol {
     }
     
     func loadHeros(name: String = "",completion: @escaping ((Result<[APIHero], APIErrorResponse>) -> Void)) {
-        if let request = requestBuilder.buildRequest(endPoint: .heroes, params: ["name": name]) {
+        
+        do {
+            let request = try requestBuilder.buildRequest(endPoint: .heroes, params: ["name": name])
             makeRequest(request: request, completion: completion)
-        } else {
-            completion(.failure(.requestWasNil))
+        } catch {
+            completion(.failure(error))
         }
     }
     
     func loadLocations(id: String, completion: @escaping ((Result<[APILocation], APIErrorResponse>) -> Void)) {
-        if let request = requestBuilder.buildRequest(endPoint: .locations, params: ["id": id]) {
-            makeRequest(request: request, completion: completion)
-        } else {
-            completion(.failure(.requestWasNil))
+        do {
+            let request = try requestBuilder.buildRequest(endPoint: .locations, params: ["id": id])
+                makeRequest(request: request, completion: completion)
+        } catch {
+            completion(.failure(error))
         }
     }
     
     func loadtransformation(id: String, completion: @escaping ((Result<[APITransformation], APIErrorResponse>) -> Void)) {
-        if let request = requestBuilder.buildRequest(endPoint: .transformations, params: ["id": id]) {
-            makeRequest(request: request, completion: completion)
-        } else {
-            completion(.failure(.requestWasNil))
+        do {
+            let request = try requestBuilder.buildRequest(endPoint: .transformations, params: ["id": id])
+                makeRequest(request: request, completion: completion)
+        } catch {
+            completion(.failure(error))
         }
     }
     

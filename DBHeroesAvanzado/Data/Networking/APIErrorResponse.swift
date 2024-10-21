@@ -12,6 +12,8 @@ enum APIErrorResponse: Error, CustomStringConvertible {
     case errorFromApi(statusCode: Int)
     case dataNoReceived
     case errorParsingData
+    case sessionTokenMissing
+    case badUrl
     
     var description: String {
         switch self {
@@ -23,8 +25,12 @@ enum APIErrorResponse: Error, CustomStringConvertible {
             return "Error from API: \(statusCode)"
         case .dataNoReceived:
             return "No data received"
-            case .errorParsingData:
+        case .errorParsingData:
             return "Error parsing data"
+        case .sessionTokenMissing:
+            return "Session token missing"
+        case .badUrl:
+            return "Bad URL"
         }
     }
 }

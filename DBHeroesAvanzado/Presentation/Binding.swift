@@ -5,6 +5,8 @@
 //  Created by Diego Herreros Parron on 17/10/24.
 //
 
+import Foundation
+
 final class Binding<State> {
     
     typealias completion = (State) -> Void
@@ -16,7 +18,9 @@ final class Binding<State> {
         get { _value }
         set {
             _value = newValue
-            complet?(_value)
+            DispatchQueue.main.async {
+                self.complet?(self._value)
+            }
         }
     }
     

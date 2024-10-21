@@ -118,5 +118,26 @@ extension StoreDataProvider {
         }
         
     }
+    
+    //funcion para borrar BBDD.
+    func clearBBDD() {
+        
+        let heroesBatchDelete = NSBatchDeleteRequest(fetchRequest: MOHero.fetchRequest())
+        let locationsBatchDelete = NSBatchDeleteRequest(fetchRequest: MOLocation.fetchRequest())
+        let transformationsBatchDelete = NSBatchDeleteRequest(fetchRequest: MOTransformation.fetchRequest())
+        
+        let deleteTask = [heroesBatchDelete, locationsBatchDelete, transformationsBatchDelete]
+        
+        for task in deleteTask {
+            do {
+                try context.execute(task)
+                context.reset()
+            }catch {
+                debugPrint("Erro clearing BBDD \(error.localizedDescription)")
+            }
+        }
+        
+    }
+    
 }
 

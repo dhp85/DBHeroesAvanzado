@@ -24,6 +24,8 @@
 		F75307342CBE72CE00FD592C /* APITransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75307332CBE72BD00FD592C /* APITransformation.swift */; };
 		F75307382CBE74BC00FD592C /* StoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75307362CBE74A800FD592C /* StoreDataProvider.swift */; };
 		F75307A92CBE817E00FD592C /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75307A72CBE817700FD592C /* APISession.swift */; };
+		F757E9132CC63C25006E389D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F757E9122CC63C25006E389D /* KeychainSwift */; };
+		F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F757E9142CC63CD7006E389D /* SecureDataStore.swift */; };
 		F79827762CBEE71900430680 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79827742CBEE71900430680 /* HeroesCollectionViewController.swift */; };
 		F79827772CBEE71900430680 /* HeroesCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79827752CBEE71900430680 /* HeroesCollectionViewController.xib */; };
 		F7C060B12CC100970099D729 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C060B02CC100900099D729 /* Binding.swift */; };
@@ -75,6 +77,7 @@
 		F75307332CBE72BD00FD592C /* APITransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITransformation.swift; sourceTree = "<group>"; };
 		F75307362CBE74A800FD592C /* StoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDataProvider.swift; sourceTree = "<group>"; };
 		F75307A72CBE817700FD592C /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		F757E9142CC63CD7006E389D /* SecureDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataStore.swift; sourceTree = "<group>"; };
 		F79827742CBEE71900430680 /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewController.swift; sourceTree = "<group>"; };
 		F79827752CBEE71900430680 /* HeroesCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCollectionViewController.xib; sourceTree = "<group>"; };
 		F7C060B02CC100900099D729 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F757E9132CC63C25006E389D /* KeychainSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +138,7 @@
 		F72BD37C2CBE61A8003FAFFB /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				F757E9142CC63CD7006E389D /* SecureDataStore.swift */,
 				F75307392CBE813900FD592C /* Networking */,
 				F753072C2CBE6FC400FD592C /* APIModel */,
 				F72BD3912CBE61CA003FAFFB /* CoreData */,
@@ -342,6 +347,7 @@
 			);
 			name = DBHeroesAvanzado;
 			packageProductDependencies = (
+				F757E9122CC63C25006E389D /* KeychainSwift */,
 			);
 			productName = DBHeroesAvanzado;
 			productReference = F7F84D9A2CBE5B1500908C78 /* DBHeroesAvanzado.app */;
@@ -425,6 +431,9 @@
 			);
 			mainGroup = F7F84D912CBE5B1500908C78;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F757E9112CC63C25006E389D /* XCRemoteSwiftPackageReference "keychain-swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F7F84D9B2CBE5B1500908C78 /* Products */;
 			projectDirPath = "";
@@ -479,6 +488,7 @@
 				F75307282CBE6A6E00FD592C /* MOLocation+CoreDataClass.swift in Sources */,
 				F7D8487C2CBFBB210005B84D /* APIEndpoint.swift in Sources */,
 				F7D848782CBFB9E90005B84D /* APIErrorResponse.swift in Sources */,
+				F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */,
 				F753072A2CBE6A6E00FD592C /* MOTransformation+CoreDataClass.swift in Sources */,
 				F7D848932CBFE9290005B84D /* LoginViewController.swift in Sources */,
 				F75307322CBE708D00FD592C /* APILocation.swift in Sources */,
@@ -829,6 +839,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F757E9112CC63C25006E389D /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 24.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F757E9122CC63C25006E389D /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F757E9112CC63C25006E389D /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		F72BD3922CBE61E8003FAFFB /* Model.xcdatamodeld */ = {
