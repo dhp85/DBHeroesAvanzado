@@ -11,6 +11,7 @@ enum APIEndpoint {
     case heroes
     case locations
     case transformations
+    case login
     
     func path() -> String {
         switch self {
@@ -20,6 +21,8 @@ enum APIEndpoint {
             return "/api/heros/locations"
             case .transformations:
             return "/api/heros/tranformations"
+        case .login:
+            return "/api/auth/login"
         }
     }
     
@@ -30,6 +33,8 @@ enum APIEndpoint {
         case .locations:
             return "POST"
         case .transformations:
+            return "POST"
+        case .login:
             return "POST"
         }
     }

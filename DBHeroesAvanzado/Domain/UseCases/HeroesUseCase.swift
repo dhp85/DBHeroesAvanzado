@@ -49,12 +49,14 @@ final class HeroesUseCase: HeroesUseCaseProtocol {
                 switch result {
                 case .success(let apiHeros):
                     // Almacenar los héroes obtenidos en el proveedor local
-                    self?.storeDataProvider.addhero(heroes: apiHeros)
-                    // Intentar recuperar los héroes después de almacenarlos
-                    let bdheroes = self?.storeDataProvider.fetchHeroes(filter: filter) ?? []
-                    // Mapear los resultados locales a objetos `Hero`
-                    let heroe = bdheroes.map({ Hero(moHero: $0)})
-                    completion(.success(heroe))
+                    DispatchQueue.main.async {
+                        self?.storeDataProvider.addhero(heroes: apiHeros)
+                        // Intentar recuperar los héroes después de almacenarlos
+                        let bdheroes = self?.storeDataProvider.fetchHeroes(filter: filter) ?? []
+                        // Mapear los resultados locales a objetos `Hero`
+                        let heroe = bdheroes.map({ Hero(moHero: $0)})
+                        completion(.success(heroe))
+                    }
                 case .failure(let error):
                     // Manejar el error de la API
                     completion(.failure(error))

@@ -99,9 +99,7 @@ class HeroesCollectionViewController: UIViewController {
         collectionView.delegate = self
         
         let cellRegister = UICollectionView.CellRegistration<HeroesCollectionViewCell, Hero>(cellNib: UINib(nibName:HeroesCollectionViewCell.identifier, bundle: nil)) { cell, indexPath, hero in
-            if let hero = self.viewModel.heroAt(index: indexPath.row) {
                 cell.nameHeroUILabel.text = hero.name
-            }
         }
         
         dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, hero in
