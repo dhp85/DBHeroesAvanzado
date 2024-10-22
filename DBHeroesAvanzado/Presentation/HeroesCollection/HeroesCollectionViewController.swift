@@ -29,12 +29,28 @@ final class HeroesCollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = "Heroes"
         configureCollectionView()
         bind()
         viewModel.loaddata(filter: nil)
+        configureLogoutButton()
+        
+
+    }
+
+    
+    private func configureLogoutButton() {
+        let logoutImage = UIImage(systemName: "escape")
+        let logoutButton = UIBarButtonItem(image: logoutImage, style: .plain, target: self, action: #selector(logoutTapped))
+        navigationItem.rightBarButtonItem = logoutButton
     }
     
-    //Establecemos el Binding con el ViewModel para ser notificados cuando cambia el estado.
+    @objc func logoutTapped() {
+        let loginVC = LoginBuilder().build()
+        SecureDataStore.shared.deleteToken()
+        self.present(loginVC, animated: true)
+    }
+    
     private func bind() {
         viewModel.statusHeroes.bind { [weak self] status in
             switch status {
@@ -58,7 +74,8 @@ final class HeroesCollectionViewController: UIViewController {
         collectionView.delegate = self
         
         let cellRegister = UICollectionView.CellRegistration<HeroesCollectionViewCell, Hero>(cellNib: UINib(nibName:HeroesCollectionViewCell.identifier, bundle: nil)) { cell, indexPath, hero in
-                cell.nameHeroUILabel.text = hero.name
+            cell.nameHeroUILabel.text = hero.name
+            cell.heroImageView.setImage(url: hero.photo)
         }
         
         dataSource = UICollectionViewDiffableDataSource(collectionView: collectionView, cellProvider: { collectionView, indexPath, hero in
@@ -71,6 +88,11 @@ final class HeroesCollectionViewController: UIViewController {
 extension HeroesCollectionViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: collectionView.bounds.width, height: 80)
+        return CGSize(width: 185, height: 180)
+    }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 10 // Espaciado vertical entre filas
     }
 }
+
+

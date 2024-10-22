@@ -24,6 +24,7 @@
 		F75307342CBE72CE00FD592C /* APITransformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75307332CBE72BD00FD592C /* APITransformation.swift */; };
 		F75307382CBE74BC00FD592C /* StoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75307362CBE74A800FD592C /* StoreDataProvider.swift */; };
 		F75307A92CBE817E00FD592C /* APISession.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75307A72CBE817700FD592C /* APISession.swift */; };
+		F754EFDA2CC7B9EA007428D7 /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754EFD92CC7B9D3007428D7 /* UIImageView+Remote.swift */; };
 		F757E9132CC63C25006E389D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F757E9122CC63C25006E389D /* KeychainSwift */; };
 		F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F757E9142CC63CD7006E389D /* SecureDataStore.swift */; };
 		F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F777563E2CC6671E00BF159E /* LoginViewModel.swift */; };
@@ -81,6 +82,7 @@
 		F75307332CBE72BD00FD592C /* APITransformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APITransformation.swift; sourceTree = "<group>"; };
 		F75307362CBE74A800FD592C /* StoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreDataProvider.swift; sourceTree = "<group>"; };
 		F75307A72CBE817700FD592C /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
+		F754EFD92CC7B9D3007428D7 /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Remote.swift"; sourceTree = "<group>"; };
 		F757E9142CC63CD7006E389D /* SecureDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataStore.swift; sourceTree = "<group>"; };
 		F777563E2CC6671E00BF159E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F77756422CC6957600BF159E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 		F72BD3892CBE61A8003FAFFB /* DBHeroesAvanzado */ = {
 			isa = PBXGroup;
 			children = (
+				F754EFD82CC7B9BE007428D7 /* Extensions */,
 				F781AEE92CC034BB00227AFF /* App */,
 				F72BD37C2CBE61A8003FAFFB /* Data */,
 				F72BD37D2CBE61A8003FAFFB /* Domain */,
@@ -240,6 +243,14 @@
 				F75307A72CBE817700FD592C /* APISession.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		F754EFD82CC7B9BE007428D7 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F754EFD92CC7B9D3007428D7 /* UIImageView+Remote.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		F781AEE92CC034BB00227AFF /* App */ = {
@@ -505,6 +516,7 @@
 				F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */,
 				F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */,
 				F753072A2CBE6A6E00FD592C /* MOTransformation+CoreDataClass.swift in Sources */,
+				F754EFDA2CC7B9EA007428D7 /* UIImageView+Remote.swift in Sources */,
 				F7D848932CBFE9290005B84D /* LoginViewController.swift in Sources */,
 				F75307322CBE708D00FD592C /* APILocation.swift in Sources */,
 				F7C060B12CC100970099D729 /* Binding.swift in Sources */,

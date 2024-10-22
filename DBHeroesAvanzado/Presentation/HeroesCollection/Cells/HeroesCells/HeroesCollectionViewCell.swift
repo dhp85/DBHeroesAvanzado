@@ -8,17 +8,29 @@
 import UIKit
 
 class HeroesCollectionViewCell: UICollectionViewCell {
-
+    @IBOutlet weak var nameHeroUILabel: UILabel!
+    
+    @IBOutlet weak var heroImageView: UIImageView!
+    
     static var identifier: String {
         String(describing: HeroesCollectionViewCell.self)
     }
     
-    @IBOutlet weak var nameHeroUILabel: UILabel!
+    
     
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        
+        // Agregar borde solo al contentView de la celda
+        self.contentView.layer.borderWidth = 1.0
+        self.contentView.layer.borderColor = UIColor.black.cgColor
+        
+        // Esquinas redondeadas para el contentView
+        self.contentView.layer.cornerRadius = 8.0
+        self.contentView.layer.masksToBounds = true
     }
-
 }
+
+

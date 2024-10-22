@@ -20,9 +20,9 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kan-61-dWj">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="10" y="59" width="373" height="710"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="GJX-ve-Lqy">
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="tVw-qq-mPp">
                         <size key="itemSize" width="128" height="128"/>
                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -34,10 +34,11 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="kan-61-dWj" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="5zC-U7-RSy"/>
-                <constraint firstItem="kan-61-dWj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="NJi-sP-tP7"/>
+                <constraint firstItem="kan-61-dWj" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="NJi-sP-tP7"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="kan-61-dWj" secondAttribute="bottom" id="UeK-th-jqM"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kan-61-dWj" secondAttribute="trailing" id="wCm-u3-8Pm"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="kan-61-dWj" secondAttribute="trailing" constant="10" id="wCm-u3-8Pm"/>
             </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
             <point key="canvasLocation" x="132" y="-11"/>
         </view>
     </objects>

@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
         super.viewDidLoad()
         bind()
         userNameField.text = "diegohp85@gmail.com"
-        //passwordField.text = "123456"
+        passwordField.text = "123456"
         
         
     }
