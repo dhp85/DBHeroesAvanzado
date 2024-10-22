@@ -27,6 +27,10 @@
 		F757E9132CC63C25006E389D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F757E9122CC63C25006E389D /* KeychainSwift */; };
 		F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F757E9142CC63CD7006E389D /* SecureDataStore.swift */; };
 		F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F777563E2CC6671E00BF159E /* LoginViewModel.swift */; };
+		F77756432CC6957600BF159E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77756422CC6957600BF159E /* LoginView.xib */; };
+		F77756452CC69D5A00BF159E /* HeroesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */; };
+		F77756472CC6AB8600BF159E /* LoginBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77756462CC6AB7D00BF159E /* LoginBuilder.swift */; };
+		F77756492CC6B43E00BF159E /* HeroesCollectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77756482CC6B3A800BF159E /* HeroesCollectionBuilder.swift */; };
 		F79827762CBEE71900430680 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79827742CBEE71900430680 /* HeroesCollectionViewController.swift */; };
 		F79827772CBEE71900430680 /* HeroesCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79827752CBEE71900430680 /* HeroesCollectionViewController.xib */; };
 		F7C060B12CC100970099D729 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C060B02CC100900099D729 /* Binding.swift */; };
@@ -38,7 +42,6 @@
 		F7D848862CBFCAF80005B84D /* HeroesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D848842CBFCAF80005B84D /* HeroesUseCase.swift */; };
 		F7D8488A2CBFCBB10005B84D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D848882CBFCBAE0005B84D /* Model.swift */; };
 		F7D8488E2CBFE15A0005B84D /* dbanime.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = F7D8488D2CBFE15A0005B84D /* dbanime.mp4 */; };
-		F7D848922CBFE9290005B84D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D848912CBFE9290005B84D /* LoginViewController.xib */; };
 		F7D848932CBFE9290005B84D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D848902CBFE9290005B84D /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +83,10 @@
 		F75307A72CBE817700FD592C /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 		F757E9142CC63CD7006E389D /* SecureDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataStore.swift; sourceTree = "<group>"; };
 		F777563E2CC6671E00BF159E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		F77756422CC6957600BF159E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewModel.swift; sourceTree = "<group>"; };
+		F77756462CC6AB7D00BF159E /* LoginBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginBuilder.swift; sourceTree = "<group>"; };
+		F77756482CC6B3A800BF159E /* HeroesCollectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionBuilder.swift; sourceTree = "<group>"; };
 		F79827742CBEE71900430680 /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewController.swift; sourceTree = "<group>"; };
 		F79827752CBEE71900430680 /* HeroesCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCollectionViewController.xib; sourceTree = "<group>"; };
 		F7C060B02CC100900099D729 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
@@ -92,7 +99,6 @@
 		F7D848882CBFCBAE0005B84D /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		F7D8488D2CBFE15A0005B84D /* dbanime.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = dbanime.mp4; sourceTree = "<group>"; };
 		F7D848902CBFE9290005B84D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F7D848912CBFE9290005B84D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		F7F84D9A2CBE5B1500908C78 /* DBHeroesAvanzado.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DBHeroesAvanzado.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F84DB02CBE5B1600908C78 /* DBHeroesAvanzadoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBHeroesAvanzadoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7F84DBA2CBE5B1600908C78 /* DBHeroesAvanzadoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DBHeroesAvanzadoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,8 +178,8 @@
 			isa = PBXGroup;
 			children = (
 				F7C060B02CC100900099D729 /* Binding.swift */,
-				F7D8488F2CBFE90C0005B84D /* Login */,
 				F79827732CBEE6E000430680 /* HeroesCollection */,
+				F7D8488F2CBFE90C0005B84D /* Login */,
 				F72BD3802CBE61A8003FAFFB /* Splash */,
 			);
 			path = Presentation;
@@ -264,6 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				F79827782CBEE73400430680 /* Cells */,
+				F77756482CC6B3A800BF159E /* HeroesCollectionBuilder.swift */,
+				F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */,
 				F79827742CBEE71900430680 /* HeroesCollectionViewController.swift */,
 				F79827752CBEE71900430680 /* HeroesCollectionViewController.xib */,
 			);
@@ -306,9 +314,10 @@
 		F7D8488F2CBFE90C0005B84D /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				F7D848902CBFE9290005B84D /* LoginViewController.swift */,
+				F77756462CC6AB7D00BF159E /* LoginBuilder.swift */,
 				F777563E2CC6671E00BF159E /* LoginViewModel.swift */,
-				F7D848912CBFE9290005B84D /* LoginViewController.xib */,
+				F7D848902CBFE9290005B84D /* LoginViewController.swift */,
+				F77756422CC6957600BF159E /* LoginView.xib */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -456,10 +465,10 @@
 			files = (
 				F7D8488E2CBFE15A0005B84D /* dbanime.mp4 in Resources */,
 				F79827772CBEE71900430680 /* HeroesCollectionViewController.xib in Resources */,
+				F77756432CC6957600BF159E /* LoginView.xib in Resources */,
 				F7C061212CC10E900099D729 /* HeroesCollectionViewCell.xib in Resources */,
 				F72BD38D2CBE61A8003FAFFB /* SplashViewController.xib in Resources */,
 				F72BD38E2CBE61A8003FAFFB /* Assets.xcassets in Resources */,
-				F7D848922CBFE9290005B84D /* LoginViewController.xib in Resources */,
 				F72BD3902CBE61A8003FAFFB /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,11 +495,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F75307382CBE74BC00FD592C /* StoreDataProvider.swift in Sources */,
+				F77756492CC6B43E00BF159E /* HeroesCollectionBuilder.swift in Sources */,
 				F753072F2CBE6FD600FD592C /* APIHero.swift in Sources */,
 				F75307262CBE6A6E00FD592C /* MOHero+CoreDataClass.swift in Sources */,
 				F75307282CBE6A6E00FD592C /* MOLocation+CoreDataClass.swift in Sources */,
 				F7D8487C2CBFBB210005B84D /* APIEndpoint.swift in Sources */,
 				F7D848782CBFB9E90005B84D /* APIErrorResponse.swift in Sources */,
+				F77756472CC6AB8600BF159E /* LoginBuilder.swift in Sources */,
 				F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */,
 				F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */,
 				F753072A2CBE6A6E00FD592C /* MOTransformation+CoreDataClass.swift in Sources */,
@@ -505,6 +516,7 @@
 				F75307A92CBE817E00FD592C /* APISession.swift in Sources */,
 				F74808CE2CC2F482006FE7F2 /* SplashViewModel.swift in Sources */,
 				F72BD38C2CBE61A8003FAFFB /* SceneDelegate.swift in Sources */,
+				F77756452CC69D5A00BF159E /* HeroesCollectionViewModel.swift in Sources */,
 				F7D848862CBFCAF80005B84D /* HeroesUseCase.swift in Sources */,
 				F7C061222CC10E900099D729 /* HeroesCollectionViewCell.swift in Sources */,
 				F7D8488A2CBFCBB10005B84D /* Model.swift in Sources */,

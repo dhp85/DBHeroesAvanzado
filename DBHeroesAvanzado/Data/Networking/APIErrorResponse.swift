@@ -14,6 +14,7 @@ enum APIErrorResponse: Error, CustomStringConvertible {
     case errorParsingData
     case sessionTokenMissing
     case badUrl
+    case noData
     
     var description: String {
         switch self {
@@ -31,6 +32,8 @@ enum APIErrorResponse: Error, CustomStringConvertible {
             return "Session token missing"
         case .badUrl:
             return "Bad URL"
+        case .noData:
+            return "No data"
         }
     }
 }

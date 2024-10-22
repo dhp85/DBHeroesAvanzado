@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23094" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="DBHeroesAvanzado" customModuleProvider="target">
+            <connections>
+                <outlet property="label" destination="b0k-jH-SWo" id="E4R-ne-YZy"/>
+                <outlet property="passwordField" destination="5sM-h1-Gzb" id="pJW-XP-Qqf"/>
+                <outlet property="signingButton" destination="6qB-Xv-l8o" id="q4O-Ha-hKr"/>
+                <outlet property="spinner" destination="Qa3-rw-Dum" id="K4p-Fi-eiN"/>
+                <outlet property="userNameField" destination="zjZ-Nc-veS" id="y9Z-Fp-ysq"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ymI-hM-i1q"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spirit Bomb  By 17Silence" translatesAutoresizingMaskIntoConstraints="NO" id="dSF-bT-PYN">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <view alpha="0.94999999999999996" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHX-wq-xjK">
+                    <rect key="frame" x="24" y="358" width="345" height="161.33333333333337"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="uqr-yG-RyS">
+                            <rect key="frame" x="12" y="12" width="321" height="137.33333333333334"/>
+                            <subviews>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zjZ-Nc-veS">
+                                    <rect key="frame" x="0.0" y="0.0" width="321" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </textField>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sM-h1-Gzb">
+                                    <rect key="frame" x="0.0" y="39" width="321" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                </textField>
+                                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b0k-jH-SWo">
+                                    <rect key="frame" x="0.0" y="75.333333333333314" width="321" height="0.0"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="Qa3-rw-Dum">
+                                    <rect key="frame" x="0.0" y="78" width="321" height="20"/>
+                                </activityIndicatorView>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6qB-Xv-l8o">
+                                    <rect key="frame" x="0.0" y="103" width="321" height="34.333333333333343"/>
+                                    <state key="normal" title="Button"/>
+                                    <buttonConfiguration key="configuration" style="filled" title="Iniciar Sesión"/>
+                                    <connections>
+                                        <action selector="onLoginButton:" destination="-1" eventType="touchUpInside" id="cVT-IJ-tiL"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="uqr-yG-RyS" firstAttribute="top" secondItem="rHX-wq-xjK" secondAttribute="top" constant="12" id="3BS-Rw-pay"/>
+                        <constraint firstItem="uqr-yG-RyS" firstAttribute="leading" secondItem="rHX-wq-xjK" secondAttribute="leading" constant="12" id="R8K-b6-K4m"/>
+                        <constraint firstAttribute="bottom" secondItem="uqr-yG-RyS" secondAttribute="bottom" constant="12" id="cAq-oS-46a"/>
+                        <constraint firstAttribute="trailing" secondItem="uqr-yG-RyS" secondAttribute="trailing" constant="12" id="yu6-lC-JC3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="dSF-bT-PYN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1XY-Tl-ywM"/>
+                <constraint firstItem="dSF-bT-PYN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="43C-WD-ndJ"/>
+                <constraint firstItem="rHX-wq-xjK" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="6uV-Zy-d8w"/>
+                <constraint firstAttribute="bottom" secondItem="dSF-bT-PYN" secondAttribute="bottom" id="GP2-ES-5DU"/>
+                <constraint firstAttribute="trailing" secondItem="dSF-bT-PYN" secondAttribute="trailing" id="Krs-8v-jTM"/>
+                <constraint firstItem="rHX-wq-xjK" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="YL6-rU-0Ux"/>
+                <constraint firstItem="rHX-wq-xjK" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="iEU-nC-Djc"/>
+            </constraints>
+            <point key="canvasLocation" x="132" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Spirit Bomb  By 17Silence" width="736" height="1309"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

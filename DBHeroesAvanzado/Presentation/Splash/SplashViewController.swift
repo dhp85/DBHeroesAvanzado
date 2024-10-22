@@ -50,14 +50,14 @@ class SplashViewController: UIViewController {
             
             case .loading:
                 return
-            case .error(reason: let reason):
+            case .error(let reason):
                 let alert = UIAlertController(title: "Error", message: reason, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default))
                 self?.present(alert,animated: true)
             case .none:
                 break
             case .ready:
-                self?.present(LoginViewController(), animated: true)
+                self?.present(LoginBuilder().build(), animated: true)
             }
         }
     }

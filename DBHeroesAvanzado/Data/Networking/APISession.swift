@@ -96,6 +96,7 @@ final class APISession: APISessionProtocol {
             // Manejo de los datos recibidos
             if let data {
                 do {
+
                     // Intentamos decodificar los datos recibidos en el tipo esperado T
                     let apiInfo = try JSONDecoder().decode(T.self, from: data)
                     completion(.success(apiInfo))
@@ -120,18 +121,42 @@ final class APISession: APISessionProtocol {
         
         do {
             // Construimos la solicitud para iniciar sesión
-            let request = try requestBuilder.buildRequest(endPoint: .login, params: ["Authorization": "Basic \(base64String)"])
+            let url = try requestBuilder.url(endPoint: .login)
+            var request = URLRequest(url: url)
+            request.httpMethod = APIEndpoint.login.httpMethord()
+            request.setValue("Basic \(base64String)", forHTTPHeaderField: "Authorization")
             
-            // Aquí especificamos el tipo que esperamos recibir
-            makeRequest(request: request, completion: { (result: Result<String, APIErrorResponse>) in
-                switch result {
-                case .success(let token):
-                    SecureDataStore.shared.set(token: token) // Guarda el token en el almacenamiento seguro
-                    completion(.success(token)) // Retorna el token al closure de finalización
-                case .failure(let error):
-                    completion(.failure(error)) // Retorna el error si falla la solicitud
+            let task = session.dataTask(with: request) { data, response, error in
+                
+                guard let data else {
+                    completion(.failure(.dataNoReceived))
+                    return
                 }
-            })
+                
+                guard error == nil else {
+                    completion(.failure(.errorFromServer(error: error!)))
+                    return
+                }
+                
+                let httpResponse = response as? HTTPURLResponse
+                let statusCode = httpResponse?.statusCode
+                
+                if httpResponse?.statusCode != 200 {
+                    completion(.failure(.errorFromApi(statusCode: statusCode ?? -1)))
+                    return
+                }
+                
+                guard let token = String(data: data, encoding: .utf8) else {
+                    completion(.failure(.dataNoReceived))
+                    return
+                }
+                
+                SecureDataStore.shared.set(token: token) 
+                completion(.success(token))
+                
+            }
+            task.resume()
+            
             
         } catch {
             completion(.failure(.requestWasNil)) // Manejo del error en la construcción de la solicitud

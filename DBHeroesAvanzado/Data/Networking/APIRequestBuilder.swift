@@ -34,7 +34,7 @@ final class APIRequestBuilder {
     /// - Parameter endPoint: El endpoint de la API que se va a utilizar.
     /// - Throws: `APIErrorResponse.badUrl` si la URL no es válida.
     /// - Returns: URL construida para el endpoint especificado.
-    private func url(endPoint: APIEndpoint) throws(APIErrorResponse) -> URL {
+    func url(endPoint: APIEndpoint) throws(APIErrorResponse) -> URL {
         var components = URLComponents()
         components.scheme = "https"
         components.host = self.host
