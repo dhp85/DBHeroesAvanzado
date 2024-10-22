@@ -17,9 +17,9 @@ final class APIRequestBuilder {
     private var request: URLRequest?
     
     /// Token de sesión, recuperado del almacenamiento seguro.
-    var token: String? {
-        secureStorege.getToken()
-    }
+    //var token: String? {
+      //  secureStorege.getToken()
+    //}
     
     /// Almacenamiento seguro donde se guarda el token.
     private let secureStorege: SecureDataStoreProtocol
@@ -52,13 +52,12 @@ final class APIRequestBuilder {
     ///   - params: Parámetros opcionales que se incluirán en el cuerpo de la solicitud.
     ///   - requiredAuthorization: Indica si se requiere un encabezado de autorización. Por defecto es `true`.
     /// - Throws: `APIErrorResponse.sessionTokenMissing` si se requiere autorización pero no hay un token.
-    private func setHeaders(params: [String: String]?, requiredAuthorization: Bool = true) throws(APIErrorResponse) {
-        if requiredAuthorization {
-            guard let token = self.token else {
+    private func setHeaders(params: [String: String]?) throws(APIErrorResponse) {
+            guard let token = secureStorege.getToken() else {
                 throw APIErrorResponse.sessionTokenMissing
             }
             request?.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        }
+        
         if let params {
             request?.httpBody = try? JSONSerialization.data(withJSONObject: params)
         }

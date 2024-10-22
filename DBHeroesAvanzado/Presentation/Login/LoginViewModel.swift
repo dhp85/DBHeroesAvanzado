@@ -18,13 +18,17 @@ final class LoginViewModel {
     let onStateChange = Binding<LoginState>(.none)
     
     
-    func signIn(user: String?, password: String?) {
-        onStateChange.value = .loading
-        guard let user, let password , isValid(user, password) else {
-            print("Usuario o contraseña no son validos.")
+    func signIn(user: String, password: String) {
+        guard validateUsername(user) else {
+            onStateChange.value = .error(reason: "Correo electronico no válido.")
             return
         }
-        
+        guard validatePassword(password) else {
+            onStateChange.value = .error(reason: "Contraseña no valida")
+            return
+        }
+       
+        onStateChange.value = .loading
         apiSession.login(user: user, password: password) { [weak self] result in
             switch result {
             case .success(_):
@@ -36,5 +40,11 @@ final class LoginViewModel {
     }
     private func isValid(_ email: String, _ password: String) -> Bool {
         return !email.isEmpty && email.contains("@") && !password.isEmpty && password.count >= 4
+    }
+    private func validateUsername(_ username: String) -> Bool {
+        username.contains("@") && !username.isEmpty
+    }
+    private func validatePassword(_ password: String) -> Bool {
+        password.count >= 4
     }
 }

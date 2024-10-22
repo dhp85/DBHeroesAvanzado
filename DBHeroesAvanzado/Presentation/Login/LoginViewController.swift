@@ -84,6 +84,6 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func onLoginButton(_ sender: Any) {
-        viewModel.signIn(user: userNameField.text, password: passwordField.text)
+        viewModel.signIn(user: userNameField.text!, password: passwordField.text!)
     }
 }
