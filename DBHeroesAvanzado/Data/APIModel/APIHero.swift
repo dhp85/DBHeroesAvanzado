@@ -10,6 +10,6 @@ struct APIHero: Codable {
     let name: String?
     let photo: String?
     var favorite: Bool?
-    let herodescripcion: String?
+    let description: String?
 
 }

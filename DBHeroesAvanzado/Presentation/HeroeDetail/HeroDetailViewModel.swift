@@ -16,7 +16,7 @@ enum HeroDetailStatus {
 
 final class HeroDetailViewModel {
     
-    private let hero: Hero
+    private(set) var hero: Hero
     private var heroLocations: [Location] = []
     private var useCase: HeroDetailUseCaseProtocol
     

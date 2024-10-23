@@ -40,6 +40,7 @@
 		F77756492CC6B43E00BF159E /* HeroesCollectionBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77756482CC6B3A800BF159E /* HeroesCollectionBuilder.swift */; };
 		F78F705B2CC939A8007838DC /* HeroAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F705A2CC93999007838DC /* HeroAnnotationView.swift */; };
 		F78F70CE2CC9496E007838DC /* HeroeDetailBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F70CD2CC94963007838DC /* HeroeDetailBuilder.swift */; };
+		F78F70D02CC9524B007838DC /* Transformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F70CF2CC9523A007838DC /* Transformation.swift */; };
 		F79827762CBEE71900430680 /* HeroesCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F79827742CBEE71900430680 /* HeroesCollectionViewController.swift */; };
 		F79827772CBEE71900430680 /* HeroesCollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F79827752CBEE71900430680 /* HeroesCollectionViewController.xib */; };
 		F7C060B12CC100970099D729 /* Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C060B02CC100900099D729 /* Binding.swift */; };
@@ -105,6 +106,7 @@
 		F77756482CC6B3A800BF159E /* HeroesCollectionBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionBuilder.swift; sourceTree = "<group>"; };
 		F78F705A2CC93999007838DC /* HeroAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAnnotationView.swift; sourceTree = "<group>"; };
 		F78F70CD2CC94963007838DC /* HeroeDetailBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDetailBuilder.swift; sourceTree = "<group>"; };
+		F78F70CF2CC9523A007838DC /* Transformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transformation.swift; sourceTree = "<group>"; };
 		F79827742CBEE71900430680 /* HeroesCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewController.swift; sourceTree = "<group>"; };
 		F79827752CBEE71900430680 /* HeroesCollectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesCollectionViewController.xib; sourceTree = "<group>"; };
 		F7C060B02CC100900099D729 /* Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Binding.swift; sourceTree = "<group>"; };
@@ -348,6 +350,7 @@
 		F7D848872CBFCB9F0005B84D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F78F70CF2CC9523A007838DC /* Transformation.swift */,
 				F77456AA2CC8E60A00EEEAF7 /* Location.swift */,
 				F7D848882CBFCBAE0005B84D /* Model.swift */,
 			);
@@ -566,6 +569,7 @@
 				F75307A92CBE817E00FD592C /* APISession.swift in Sources */,
 				F74808CE2CC2F482006FE7F2 /* SplashViewModel.swift in Sources */,
 				F78F705B2CC939A8007838DC /* HeroAnnotationView.swift in Sources */,
+				F78F70D02CC9524B007838DC /* Transformation.swift in Sources */,
 				F72BD38C2CBE61A8003FAFFB /* SceneDelegate.swift in Sources */,
 				F77756452CC69D5A00BF159E /* HeroesCollectionViewModel.swift in Sources */,
 				F7D848862CBFCAF80005B84D /* HeroesUseCase.swift in Sources */,

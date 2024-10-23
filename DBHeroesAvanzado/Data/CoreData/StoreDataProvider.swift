@@ -59,7 +59,7 @@ extension StoreDataProvider {
             newHero.id = hero.id
             newHero.name = hero.name
             newHero.photo = hero.photo
-            newHero.herodescripcion = hero.herodescripcion
+            newHero.herodescripcion = hero.description
             newHero.favorite = hero.favorite ?? false
         }
         save()

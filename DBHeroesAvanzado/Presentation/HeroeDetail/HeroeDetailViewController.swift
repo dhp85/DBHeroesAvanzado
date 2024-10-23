@@ -39,6 +39,7 @@ final class HeroeDetailViewController: UIViewController {
             switch status {
                 case .locationUpdated:
                 self?.setupMap()
+                self?.configureView()
             case .error(reason: let reason):
                 let alert = UIAlertController(title: "Error", message: reason, preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: "Ok", style: .default))
@@ -47,6 +48,11 @@ final class HeroeDetailViewController: UIViewController {
                 break
             }
         }
+    }
+    
+    private func configureView() {
+        nameHeroUILabel.text = viewModel.hero.name
+        descriptionHeroUILabel.text = viewModel.hero.herodescripcion
     }
     
     private func configureMap() {
