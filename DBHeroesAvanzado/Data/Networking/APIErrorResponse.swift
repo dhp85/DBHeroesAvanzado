@@ -15,6 +15,7 @@ enum APIErrorResponse: Error, CustomStringConvertible {
     case sessionTokenMissing
     case badUrl
     case noData
+    case heroNotFound(idHero: String)
     
     var description: String {
         switch self {
@@ -34,6 +35,8 @@ enum APIErrorResponse: Error, CustomStringConvertible {
             return "Bad URL"
         case .noData:
             return "No data"
+        case .heroNotFound(idHero: let idHero):
+            return "Hero with id \(idHero) not found"
         }
     }
 }

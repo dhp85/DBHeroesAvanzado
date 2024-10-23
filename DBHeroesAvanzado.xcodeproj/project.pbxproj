@@ -27,6 +27,10 @@
 		F754EFDA2CC7B9EA007428D7 /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754EFD92CC7B9D3007428D7 /* UIImageView+Remote.swift */; };
 		F757E9132CC63C25006E389D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F757E9122CC63C25006E389D /* KeychainSwift */; };
 		F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F757E9142CC63CD7006E389D /* SecureDataStore.swift */; };
+		F77456A32CC8E06700EEEAF7 /* HeroeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77456A22CC8E05200EEEAF7 /* HeroeDetailViewController.swift */; };
+		F77456A72CC8E0A600EEEAF7 /* HeroeDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */; };
+		F77456A92CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77456A82CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift */; };
+		F77456AB2CC8E61100EEEAF7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77456AA2CC8E60A00EEEAF7 /* Location.swift */; };
 		F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F777563E2CC6671E00BF159E /* LoginViewModel.swift */; };
 		F77756432CC6957600BF159E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77756422CC6957600BF159E /* LoginView.xib */; };
 		F77756452CC69D5A00BF159E /* HeroesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */; };
@@ -84,6 +88,10 @@
 		F75307A72CBE817700FD592C /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 		F754EFD92CC7B9D3007428D7 /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Remote.swift"; sourceTree = "<group>"; };
 		F757E9142CC63CD7006E389D /* SecureDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataStore.swift; sourceTree = "<group>"; };
+		F77456A22CC8E05200EEEAF7 /* HeroeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDetailViewController.swift; sourceTree = "<group>"; };
+		F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroeDetailView.xib; sourceTree = "<group>"; };
+		F77456A82CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailUseCase.swift; sourceTree = "<group>"; };
+		F77456AA2CC8E60A00EEEAF7 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		F777563E2CC6671E00BF159E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F77756422CC6957600BF159E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewModel.swift; sourceTree = "<group>"; };
@@ -179,6 +187,7 @@
 		F72BD3812CBE61A8003FAFFB /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				F77456A12CC8E03C00EEEAF7 /* HeroeDetail */,
 				F7C060B02CC100900099D729 /* Binding.swift */,
 				F79827732CBEE6E000430680 /* HeroesCollection */,
 				F7D8488F2CBFE90C0005B84D /* Login */,
@@ -253,6 +262,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F77456A12CC8E03C00EEEAF7 /* HeroeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				F77456A22CC8E05200EEEAF7 /* HeroeDetailViewController.swift */,
+				F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */,
+			);
+			path = HeroeDetail;
+			sourceTree = "<group>";
+		};
 		F781AEE92CC034BB00227AFF /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -310,6 +328,7 @@
 			isa = PBXGroup;
 			children = (
 				F7D848842CBFCAF80005B84D /* HeroesUseCase.swift */,
+				F77456A82CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -317,6 +336,7 @@
 		F7D848872CBFCB9F0005B84D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F77456AA2CC8E60A00EEEAF7 /* Location.swift */,
 				F7D848882CBFCBAE0005B84D /* Model.swift */,
 			);
 			path = Model;
@@ -479,6 +499,7 @@
 				F77756432CC6957600BF159E /* LoginView.xib in Resources */,
 				F7C061212CC10E900099D729 /* HeroesCollectionViewCell.xib in Resources */,
 				F72BD38D2CBE61A8003FAFFB /* SplashViewController.xib in Resources */,
+				F77456A72CC8E0A600EEEAF7 /* HeroeDetailView.xib in Resources */,
 				F72BD38E2CBE61A8003FAFFB /* Assets.xcassets in Resources */,
 				F72BD3902CBE61A8003FAFFB /* LaunchScreen.storyboard in Resources */,
 			);
@@ -507,6 +528,7 @@
 			files = (
 				F75307382CBE74BC00FD592C /* StoreDataProvider.swift in Sources */,
 				F77756492CC6B43E00BF159E /* HeroesCollectionBuilder.swift in Sources */,
+				F77456AB2CC8E61100EEEAF7 /* Location.swift in Sources */,
 				F753072F2CBE6FD600FD592C /* APIHero.swift in Sources */,
 				F75307262CBE6A6E00FD592C /* MOHero+CoreDataClass.swift in Sources */,
 				F75307282CBE6A6E00FD592C /* MOLocation+CoreDataClass.swift in Sources */,
@@ -514,6 +536,7 @@
 				F7D848782CBFB9E90005B84D /* APIErrorResponse.swift in Sources */,
 				F77756472CC6AB8600BF159E /* LoginBuilder.swift in Sources */,
 				F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */,
+				F77456A92CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift in Sources */,
 				F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */,
 				F753072A2CBE6A6E00FD592C /* MOTransformation+CoreDataClass.swift in Sources */,
 				F754EFDA2CC7B9EA007428D7 /* UIImageView+Remote.swift in Sources */,
@@ -532,6 +555,7 @@
 				F7D848862CBFCAF80005B84D /* HeroesUseCase.swift in Sources */,
 				F7C061222CC10E900099D729 /* HeroesCollectionViewCell.swift in Sources */,
 				F7D8488A2CBFCBB10005B84D /* Model.swift in Sources */,
+				F77456A32CC8E06700EEEAF7 /* HeroeDetailViewController.swift in Sources */,
 				F79827762CBEE71900430680 /* HeroesCollectionViewController.swift in Sources */,
 				F72BD3942CBE61E8003FAFFB /* Model.xcdatamodeld in Sources */,
 			);

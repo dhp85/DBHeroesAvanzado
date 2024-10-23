@@ -48,6 +48,7 @@ final class HeroesCollectionViewController: UIViewController {
     @objc func logoutTapped() {
         let loginVC = LoginBuilder().build()
         SecureDataStore.shared.deleteToken()
+        StoreDataProvider().clearBBDD()
         self.present(loginVC, animated: true)
     }
     
@@ -86,6 +87,15 @@ final class HeroesCollectionViewController: UIViewController {
 }
 
 extension HeroesCollectionViewController: UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        guard let hero = viewModel.heroAt(index: indexPath.row) else {
+            return
+        }
+        let viewModel = HeroDetailViewModel(hero: hero)
+        let heroDetailVC = HeroeDetailViewController(viewModel: viewModel)
+        self.show(heroDetailVC, sender: self)
+    }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         return CGSize(width: 185, height: 180)
