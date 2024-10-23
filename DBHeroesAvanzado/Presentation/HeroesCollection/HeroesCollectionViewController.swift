@@ -92,9 +92,8 @@ extension HeroesCollectionViewController: UICollectionViewDelegate, UICollection
         guard let hero = viewModel.heroAt(index: indexPath.row) else {
             return
         }
-        let viewModel = HeroDetailViewModel(hero: hero)
-        let heroDetailVC = HeroeDetailViewController(viewModel: viewModel)
-        self.show(heroDetailVC, sender: self)
+        let navigationDetailHeroe = HeroeDetailBuilder(name: hero).build()
+        self.show(navigationDetailHeroe, sender: self)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

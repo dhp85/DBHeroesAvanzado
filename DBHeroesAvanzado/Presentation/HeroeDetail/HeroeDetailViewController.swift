@@ -14,6 +14,7 @@ final class HeroeDetailViewController: UIViewController {
     @IBOutlet weak var imageMap: MKMapView!
     
     private let viewModel: HeroDetailViewModel
+    private var locationManager: CLLocationManager = CLLocationManager()
     
     init(viewModel: HeroDetailViewModel) {
         self.viewModel = viewModel
@@ -28,14 +29,15 @@ final class HeroeDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
+        imageMap.delegate = self
         viewModel.loadData()
+        checkLocationAuthorizationStatus()
     }
     
     func bind() {
         viewModel.status.bind { [weak self] status in
             switch status {
-                
-            case .locationUpdated:
+                case .locationUpdated:
                 self?.setupMap()
             case .error(reason: let reason):
                 let alert = UIAlertController(title: "Error", message: reason, preferredStyle: .alert)
@@ -47,6 +49,12 @@ final class HeroeDetailViewController: UIViewController {
         }
     }
     
+    private func configureMap() {
+        imageMap.delegate = self
+        imageMap.showsUserLocation = true
+        imageMap.showsUserTrackingButton = true
+    }
+    
     private func setupMap() {
         let oldAnnotations = self.imageMap.annotations
         self.imageMap.removeAnnotations(oldAnnotations)
@@ -55,5 +63,41 @@ final class HeroeDetailViewController: UIViewController {
         if let annotation = viewModel.annotations.first {
             imageMap.region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 100000, longitudinalMeters: 100000)
         }
+    }
+    
+    private func checkLocationAuthorizationStatus() {
+        let authorizationStatus = locationManager.authorizationStatus
+        
+        switch authorizationStatus {
+        case .notDetermined:
+            locationManager.requestWhenInUseAuthorization()
+        case .authorizedWhenInUse, .authorizedAlways:
+            locationManager.startUpdatingLocation()
+        case .denied, .restricted:
+            imageMap.showsUserLocation = false
+            imageMap.showsUserTrackingButton = false
+        @unknown default:
+            break
+        }
+    }
+}
+
+extension HeroeDetailViewController: MKMapViewDelegate {
+    
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        guard let annotation = annotation as? HeroAnnotation else {
+            return nil
+        }
+        
+        if let annotationView = mapView.dequeueReusableAnnotationView(withIdentifier: HeroAnnotationView.identifier) {
+            return annotationView
+        }
+        
+        let annotationView = HeroAnnotationView(annotation: annotation, reuseIdentifier: HeroAnnotationView.identifier)
+        return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        debugPrint("calloutAccessoryControlTapped")
     }
 }
