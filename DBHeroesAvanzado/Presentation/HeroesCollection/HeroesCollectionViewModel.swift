@@ -5,7 +5,7 @@
 //  Created by Diego Herreros Parron on 21/10/24.
 //
 
-import UIKit
+import Foundation
 
 enum StatusHeroes {
     case dataUpdated

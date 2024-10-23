@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23084"/>
+        <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HeroeDetailViewController" customModule="DBHeroesAvanzado" customModuleProvider="target">
             <connections>
+                <outlet property="collectionTransformations" destination="Rwt-IK-64v" id="Gf6-Ub-48c"/>
+                <outlet property="descriptionHeroUILabel" destination="Syv-XX-wdF" id="lcI-ue-R3Z"/>
+                <outlet property="imageMap" destination="Wae-rU-x1h" id="gOp-Rv-Z13"/>
+                <outlet property="nameHeroUILabel" destination="7ML-dk-80g" id="8TN-cf-A8y"/>
                 <outlet property="view" destination="iN0-l3-epB" id="54c-De-AgQ"/>
             </connections>
         </placeholder>
@@ -17,8 +22,76 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AG1-Jv-8qX">
+                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-5a-DFw">
+                            <rect key="frame" x="16" y="16" width="361" height="759"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IqH-05-bOL">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="618.33333333333337"/>
+                                    <subviews>
+                                        <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-rU-x1h">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="618.33333333333337"/>
+                                            <standardMapConfiguration key="preferredConfiguration"/>
+                                        </mapView>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="daD-1L-WMf">
+                                    <rect key="frame" x="0.0" y="618.33333333333337" width="361" height="40.666666666666629"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ML-dk-80g">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syv-XX-wdF">
+                                            <rect key="frame" x="0.0" y="20.333333333333258" width="361" height="20.333333333333329"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rwt-IK-64v">
+                                    <rect key="frame" x="0.0" y="659" width="361" height="100"/>
+                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="r3k-QW-agr"/>
+                                    </constraints>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pjr-cf-nsg">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="daD-1L-WMf" firstAttribute="width" secondItem="3Vb-5a-DFw" secondAttribute="width" id="vgH-Lj-Ovd"/>
+                            </constraints>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="3Vb-5a-DFw" firstAttribute="height" secondItem="AG1-Jv-8qX" secondAttribute="height" id="Kbp-kF-SYs"/>
+                        <constraint firstAttribute="bottom" secondItem="3Vb-5a-DFw" secondAttribute="bottom" id="R4y-Vh-tns"/>
+                        <constraint firstItem="3Vb-5a-DFw" firstAttribute="leading" secondItem="AG1-Jv-8qX" secondAttribute="leading" constant="16" id="Sot-qp-hXx"/>
+                        <constraint firstItem="3Vb-5a-DFw" firstAttribute="width" secondItem="AG1-Jv-8qX" secondAttribute="width" constant="-32" id="VLK-Fp-g42"/>
+                        <constraint firstItem="3Vb-5a-DFw" firstAttribute="top" secondItem="AG1-Jv-8qX" secondAttribute="top" constant="16" id="Zem-Hn-AtR"/>
+                        <constraint firstAttribute="trailing" secondItem="3Vb-5a-DFw" secondAttribute="trailing" constant="16" id="kfb-3d-2uf"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="AG1-Jv-8qX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3Lf-QV-MjH"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AG1-Jv-8qX" secondAttribute="bottom" id="Uap-vF-kCY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AG1-Jv-8qX" secondAttribute="trailing" id="d6J-zi-LGl"/>
+                <constraint firstItem="AG1-Jv-8qX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fa5-A0-BL4"/>
+            </constraints>
             <point key="canvasLocation" x="83" y="-11"/>
         </view>
     </objects>

@@ -31,6 +31,8 @@
 		F77456A72CC8E0A600EEEAF7 /* HeroeDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */; };
 		F77456A92CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77456A82CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift */; };
 		F77456AB2CC8E61100EEEAF7 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77456AA2CC8E60A00EEEAF7 /* Location.swift */; };
+		F774571E2CC9110A00EEEAF7 /* HeroAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774571D2CC910FE00EEEAF7 /* HeroAnnotation.swift */; };
+		F77457202CC914AF00EEEAF7 /* HeroDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774571F2CC914AF00EEEAF7 /* HeroDetailViewModel.swift */; };
 		F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F777563E2CC6671E00BF159E /* LoginViewModel.swift */; };
 		F77756432CC6957600BF159E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77756422CC6957600BF159E /* LoginView.xib */; };
 		F77756452CC69D5A00BF159E /* HeroesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */; };
@@ -92,6 +94,8 @@
 		F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroeDetailView.xib; sourceTree = "<group>"; };
 		F77456A82CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailUseCase.swift; sourceTree = "<group>"; };
 		F77456AA2CC8E60A00EEEAF7 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		F774571D2CC910FE00EEEAF7 /* HeroAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroAnnotation.swift; sourceTree = "<group>"; };
+		F774571F2CC914AF00EEEAF7 /* HeroDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailViewModel.swift; sourceTree = "<group>"; };
 		F777563E2CC6671E00BF159E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F77756422CC6957600BF159E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewModel.swift; sourceTree = "<group>"; };
@@ -265,6 +269,8 @@
 		F77456A12CC8E03C00EEEAF7 /* HeroeDetail */ = {
 			isa = PBXGroup;
 			children = (
+				F774571D2CC910FE00EEEAF7 /* HeroAnnotation.swift */,
+				F774571F2CC914AF00EEEAF7 /* HeroDetailViewModel.swift */,
 				F77456A22CC8E05200EEEAF7 /* HeroeDetailViewController.swift */,
 				F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */,
 			);
@@ -530,6 +536,7 @@
 				F77756492CC6B43E00BF159E /* HeroesCollectionBuilder.swift in Sources */,
 				F77456AB2CC8E61100EEEAF7 /* Location.swift in Sources */,
 				F753072F2CBE6FD600FD592C /* APIHero.swift in Sources */,
+				F77457202CC914AF00EEEAF7 /* HeroDetailViewModel.swift in Sources */,
 				F75307262CBE6A6E00FD592C /* MOHero+CoreDataClass.swift in Sources */,
 				F75307282CBE6A6E00FD592C /* MOLocation+CoreDataClass.swift in Sources */,
 				F7D8487C2CBFBB210005B84D /* APIEndpoint.swift in Sources */,
@@ -538,6 +545,7 @@
 				F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */,
 				F77456A92CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift in Sources */,
 				F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */,
+				F774571E2CC9110A00EEEAF7 /* HeroAnnotation.swift in Sources */,
 				F753072A2CBE6A6E00FD592C /* MOTransformation+CoreDataClass.swift in Sources */,
 				F754EFDA2CC7B9EA007428D7 /* UIImageView+Remote.swift in Sources */,
 				F7D848932CBFE9290005B84D /* LoginViewController.swift in Sources */,

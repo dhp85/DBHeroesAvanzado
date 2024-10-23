@@ -5,53 +5,13 @@
 //  Created by Diego Herreros Parron on 23/10/24.
 //
 
-import UIKit
-
-enum HeroDetailStatus {
-    case locationUpdated
-    case error(reason: String)
-    case none
-}
-
-final class HeroDetailViewModel {
-    
-    private let hero: Hero
-    private var heroLocations: [Location] = []
-    private var useCase: HeroDetailUseCaseProtocol
-    
-    var status: Binding<HeroDetailStatus> = Binding(.none)
-    init(hero: Hero, useCase: HeroDetailUseCaseProtocol = HeroDetailUseCase()) {
-        self.hero = hero
-        self.useCase = useCase
-    }
-    
-    func loadData() {
-        loadLocations()
-    }
-    
-    private func loadLocations() {
-        useCase.loadLocationsForHeroWith(id: hero.id) { [weak self] result in
-            switch result {
-                
-            case .success(let locations):
-                self?.heroLocations = locations
-                self?.createAnnotations()
-            case .failure(let error):
-                self?.status.value = .error(reason: error.description)
-            }
-        }
-    }
-    
-    private func createAnnotations() {
-        self.status.value = .locationUpdated
-    }
-}
-
-
-
-
+import MapKit
 
 final class HeroeDetailViewController: UIViewController {
+    @IBOutlet weak var nameHeroUILabel: UILabel!
+    @IBOutlet weak var collectionTransformations: UICollectionView!
+    @IBOutlet weak var descriptionHeroUILabel: UILabel!
+    @IBOutlet weak var imageMap: MKMapView!
     
     private let viewModel: HeroDetailViewModel
     
@@ -67,6 +27,33 @@ final class HeroeDetailViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bind()
         viewModel.loadData()
+    }
+    
+    func bind() {
+        viewModel.status.bind { [weak self] status in
+            switch status {
+                
+            case .locationUpdated:
+                self?.setupMap()
+            case .error(reason: let reason):
+                let alert = UIAlertController(title: "Error", message: reason, preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Ok", style: .default))
+                self?.present(alert,animated: true)
+            case .none:
+                break
+            }
+        }
+    }
+    
+    private func setupMap() {
+        let oldAnnotations = self.imageMap.annotations
+        self.imageMap.removeAnnotations(oldAnnotations)
+        self.imageMap.addAnnotations(viewModel.annotations)
+        
+        if let annotation = viewModel.annotations.first {
+            imageMap.region = MKCoordinateRegion(center: annotation.coordinate, latitudinalMeters: 100000, longitudinalMeters: 100000)
+        }
     }
 }
