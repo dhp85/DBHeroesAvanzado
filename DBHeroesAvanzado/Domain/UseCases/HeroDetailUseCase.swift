@@ -66,18 +66,20 @@ final class HeroDetailUseCase: HeroDetailUseCaseProtocol {
             completion(.failure(.heroNotFound(idHero: id)))
             return
         }
-
+        
         // Intentar obtener las transformaciones almacenadas en local
         let bdTransformations = transformation.transformations ?? []
         print("Transformaciones encontradas en local \(bdTransformations)")
-
+        
         // Si hay transformaciones en local, las devolvemos directamente
         if bdTransformations.isEmpty {
-                apiProvider.loadtransformation(id: id) { [weak self]result in
+                
+                apiProvider.loadtransformation(id: id) { result in
                     switch result {
                     case .success(let transformations):
                         // Guardar las transformaciones obtenidas de la API en el almacenamiento local
-                        self?.StoreData.addTransformation(transformations: transformations)
+                        
+                        self.StoreData.addTransformation(transformations: transformations)
                         
                         // Volver a obtener las transformaciones desde el héroe actualizado
                         let bdtransformations = transformation.transformations ?? []
@@ -92,14 +94,13 @@ final class HeroDetailUseCase: HeroDetailUseCaseProtocol {
                         completion(.failure(error))
                     }
                 }
-            
-        } else {
-            
-            let domainTransformations = bdTransformations.map({ Transformation(moTransformation: $0) })
-            completion(.success(domainTransformations))
-
+            } else {
+                
+                let domainTransformations = bdTransformations.map({ Transformation(moTransformation: $0) })
+                completion(.success(domainTransformations))
+                
+            }
         }
-    }
     
    /* func loadTransformationsForHeroWith(id: String, completion: @escaping (Result<[Transformation], APIErrorResponse>) -> Void) {
         guard let transformation = self.getHeroWith(id: id) else {

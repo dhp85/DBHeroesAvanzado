@@ -43,6 +43,7 @@ final class HeroDetailViewModel {
                 
             case .success(let transformations):
                 self?.transformation = transformations
+                self?.status.value = .locationUpdated
             case .failure(let error):
                 self?.status.value = .error(reason: error.description)
             }
