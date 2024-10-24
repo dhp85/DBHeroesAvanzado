@@ -14,7 +14,6 @@
                 <outlet property="collectionTransformations" destination="Rwt-IK-64v" id="Gf6-Ub-48c"/>
                 <outlet property="descriptionHeroUILabel" destination="Syv-XX-wdF" id="lcI-ue-R3Z"/>
                 <outlet property="imageMap" destination="Wae-rU-x1h" id="gOp-Rv-Z13"/>
-                <outlet property="nameHeroUILabel" destination="7ML-dk-80g" id="8TN-cf-A8y"/>
                 <outlet property="view" destination="iN0-l3-epB" id="54c-De-AgQ"/>
             </connections>
         </placeholder>
@@ -29,27 +28,21 @@
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-5a-DFw">
                             <rect key="frame" x="16" y="16" width="361" height="759"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IqH-05-bOL">
-                                    <rect key="frame" x="0.0" y="0.0" width="361" height="605"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="IqH-05-bOL">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="642"/>
                                     <subviews>
                                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserTrackingButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-rU-x1h">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="605"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="642"/>
                                             <standardMapConfiguration key="preferredConfiguration"/>
                                         </mapView>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="daD-1L-WMf">
-                                    <rect key="frame" x="0.0" y="605" width="361" height="54"/>
+                                    <rect key="frame" x="0.0" y="642" width="361" height="17"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ML-dk-80g">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="33.666666666666664"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syv-XX-wdF">
-                                            <rect key="frame" x="0.0" y="33.666666666666629" width="361" height="20.333333333333329"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syv-XX-wdF">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
@@ -61,7 +54,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="r3k-QW-agr"/>
                                     </constraints>
-                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pjr-cf-nsg">
+                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Pjr-cf-nsg">
                                         <size key="itemSize" width="128" height="128"/>
                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                         <size key="footerReferenceSize" width="0.0" height="0.0"/>

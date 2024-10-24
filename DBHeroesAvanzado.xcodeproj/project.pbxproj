@@ -27,6 +27,8 @@
 		F754EFDA2CC7B9EA007428D7 /* UIImageView+Remote.swift in Sources */ = {isa = PBXBuildFile; fileRef = F754EFD92CC7B9D3007428D7 /* UIImageView+Remote.swift */; };
 		F757E9132CC63C25006E389D /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = F757E9122CC63C25006E389D /* KeychainSwift */; };
 		F757E9152CC63CDE006E389D /* SecureDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F757E9142CC63CD7006E389D /* SecureDataStore.swift */; };
+		F75C21922CCA37D2001A3566 /* HeroesDetailViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F75C21912CCA37D2001A3566 /* HeroesDetailViewCell.xib */; };
+		F75C21932CCA37D2001A3566 /* HeroesDetailViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75C21902CCA37D2001A3566 /* HeroesDetailViewCell.swift */; };
 		F77456A32CC8E06700EEEAF7 /* HeroeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77456A22CC8E05200EEEAF7 /* HeroeDetailViewController.swift */; };
 		F77456A72CC8E0A600EEEAF7 /* HeroeDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */; };
 		F77456A92CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77456A82CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift */; };
@@ -93,6 +95,8 @@
 		F75307A72CBE817700FD592C /* APISession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APISession.swift; sourceTree = "<group>"; };
 		F754EFD92CC7B9D3007428D7 /* UIImageView+Remote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Remote.swift"; sourceTree = "<group>"; };
 		F757E9142CC63CD7006E389D /* SecureDataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureDataStore.swift; sourceTree = "<group>"; };
+		F75C21902CCA37D2001A3566 /* HeroesDetailViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesDetailViewCell.swift; sourceTree = "<group>"; };
+		F75C21912CCA37D2001A3566 /* HeroesDetailViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroesDetailViewCell.xib; sourceTree = "<group>"; };
 		F77456A22CC8E05200EEEAF7 /* HeroeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroeDetailViewController.swift; sourceTree = "<group>"; };
 		F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeroeDetailView.xib; sourceTree = "<group>"; };
 		F77456A82CC8E4DE00EEEAF7 /* HeroDetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetailUseCase.swift; sourceTree = "<group>"; };
@@ -272,9 +276,19 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F75C218D2CCA374E001A3566 /* CellsDetails */ = {
+			isa = PBXGroup;
+			children = (
+				F75C21902CCA37D2001A3566 /* HeroesDetailViewCell.swift */,
+				F75C21912CCA37D2001A3566 /* HeroesDetailViewCell.xib */,
+			);
+			path = CellsDetails;
+			sourceTree = "<group>";
+		};
 		F77456A12CC8E03C00EEEAF7 /* HeroeDetail */ = {
 			isa = PBXGroup;
 			children = (
+				F75C218D2CCA374E001A3566 /* CellsDetails */,
 				F774571D2CC910FE00EEEAF7 /* HeroAnnotation.swift */,
 				F78F705A2CC93999007838DC /* HeroAnnotationView.swift */,
 				F78F70CD2CC94963007838DC /* HeroeDetailBuilder.swift */,
@@ -514,6 +528,7 @@
 				F77756432CC6957600BF159E /* LoginView.xib in Resources */,
 				F7C061212CC10E900099D729 /* HeroesCollectionViewCell.xib in Resources */,
 				F72BD38D2CBE61A8003FAFFB /* SplashViewController.xib in Resources */,
+				F75C21922CCA37D2001A3566 /* HeroesDetailViewCell.xib in Resources */,
 				F77456A72CC8E0A600EEEAF7 /* HeroeDetailView.xib in Resources */,
 				F72BD38E2CBE61A8003FAFFB /* Assets.xcassets in Resources */,
 				F72BD3902CBE61A8003FAFFB /* LaunchScreen.storyboard in Resources */,
@@ -566,6 +581,7 @@
 				F7D8487F2CBFBCC10005B84D /* APIRequestBuilder.swift in Sources */,
 				F72BD38A2CBE61A8003FAFFB /* SplashViewController.swift in Sources */,
 				F72BD38B2CBE61A8003FAFFB /* AppDelegate.swift in Sources */,
+				F75C21932CCA37D2001A3566 /* HeroesDetailViewCell.swift in Sources */,
 				F75307A92CBE817E00FD592C /* APISession.swift in Sources */,
 				F74808CE2CC2F482006FE7F2 /* SplashViewModel.swift in Sources */,
 				F78F705B2CC939A8007838DC /* HeroAnnotationView.swift in Sources */,

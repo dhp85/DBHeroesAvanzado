@@ -19,6 +19,7 @@ final class HeroDetailViewModel {
     private(set) var hero: Hero
     private var heroLocations: [Location] = []
     private var useCase: HeroDetailUseCaseProtocol
+    var transformation: [Transformation] = []
     
     var status: Binding<HeroDetailStatus> = Binding(.none)
     var annotations: [HeroAnnotation] = []
@@ -30,6 +31,21 @@ final class HeroDetailViewModel {
     
     func loadData() {
         loadLocations()
+        loadTransformations()
+        
+        
+    }
+    
+    private func loadTransformations() {
+        useCase.loadTransformationsForHeroWith(id: hero.id) { [weak self] result in
+            switch result {
+                
+            case .success(let transformations):
+                self?.transformation = transformations
+            case .failure(let error):
+                self?.status.value = .error(reason: error.description)
+            }
+        }
     }
     
     private func loadLocations() {
@@ -55,5 +71,12 @@ final class HeroDetailViewModel {
             self?.annotations.append(annotation)
         }
         self.status.value = .locationUpdated
+    }
+    
+    func transformationAt(index: Int) -> Transformation? {
+        guard index < transformation.count else {
+            return nil
+        }
+        return transformation[index]
     }
 }

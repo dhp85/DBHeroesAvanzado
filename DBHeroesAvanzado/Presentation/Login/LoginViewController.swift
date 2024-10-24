@@ -34,6 +34,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         bind()
+        userNameField.text =  "diegohp85@gmail.com"
+        passwordField.text = "123456"
     }
     // MARK: - Binding Method
     

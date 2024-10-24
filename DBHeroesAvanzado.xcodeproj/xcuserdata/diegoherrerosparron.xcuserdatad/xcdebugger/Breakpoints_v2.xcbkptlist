@@ -3,4 +3,850 @@
    uuid = "874C605F-AD26-455C-A963-ACB8D97821DE"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD1C2B6C-E316-4370-B0F9-FDBB51988294"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
+            landmarkName = "loadTransformations()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "FD1C2B6C-E316-4370-B0F9-FDBB51988294 - 348979253969b9c1"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DBHeroesAvanzado.HeroDetailViewModel.loadTransformations() -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Presentation/HeroeDetail/HeroDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40">
+               </Location>
+               <Location
+                  uuid = "FD1C2B6C-E316-4370-B0F9-FDBB51988294 - 6c59599a4b045103"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailViewModel.loadTransformations() -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Presentation/HeroeDetail/HeroDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "40"
+                  endingLineNumber = "40">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "38D854F5-DCAA-4286-AB39-2DBCECEA4D1A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "loadTransformations()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "63A7E19A-3073-4451-8742-B1B7EE6EBE04"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroDetailViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "loadTransformations()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "63A7E19A-3073-4451-8742-B1B7EE6EBE04 - 6c59599a4b0450a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailViewModel.loadTransformations() -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Presentation/HeroeDetail/HeroDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+               <Location
+                  uuid = "63A7E19A-3073-4451-8742-B1B7EE6EBE04 - 6c59599a4b0450a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailViewModel.loadTransformations() -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Presentation/HeroeDetail/HeroDetailViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "B28BE37D-1B21-460E-A25B-BCFF328A9FFF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "loadLocationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "42BC9B6C-61CE-406B-A19D-C2BA92152CCF"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C31AFA7-404B-4460-9ACA-972796D624F7"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "338FB3FE-A8BF-429F-9C04-CD88688DC679"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "64"
+            endingLineNumber = "64"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E550800-4264-4F92-A071-0DC0DF2AE638"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5EB22552-CD9E-4161-A64F-CD29ECBC4806"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "66"
+            endingLineNumber = "66"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "41B958DF-ABBF-45B4-B240-7A478D4E3241"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "463B732F-57DD-44AD-B3E6-DCE4A131EC13"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "32938C5D-D1B6-4995-A5A9-1C9E3CDB17D0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "72"
+            endingLineNumber = "72"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB489E83-2BE5-439D-81F7-0FE6A6D0B0E8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "75"
+            endingLineNumber = "75"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "86372D58-7C78-4A54-9983-EBA1E541A395"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "86372D58-7C78-4A54-9983-EBA1E541A395 - 5a82baf30688b56"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76">
+               </Location>
+               <Location
+                  uuid = "86372D58-7C78-4A54-9983-EBA1E541A395 - dd4ab4a2d5f22f5e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "76"
+                  endingLineNumber = "76">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8B1B7462-67A6-4913-9EC4-3E362D352BDD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "77"
+            endingLineNumber = "77"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8B1B7462-67A6-4913-9EC4-3E362D352BDD - dd4ab4a2d5f22f90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+               <Location
+                  uuid = "8B1B7462-67A6-4913-9EC4-3E362D352BDD - dd4ab4a2d5f22f90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8C703671-3E89-4037-A52C-09E431379188"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "8C703671-3E89-4037-A52C-09E431379188 - dd4ab4a2d5f22f90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+               <Location
+                  uuid = "8C703671-3E89-4037-A52C-09E431379188 - dd4ab4a2d5f22f90"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "78"
+                  endingLineNumber = "78">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C762EAAB-260E-4226-AF13-7A86FF23A51A"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "79"
+            endingLineNumber = "79"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "C762EAAB-260E-4226-AF13-7A86FF23A51A - dd4ab4a2d5f22fd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80">
+               </Location>
+               <Location
+                  uuid = "C762EAAB-260E-4226-AF13-7A86FF23A51A - 48411fc93cfb7893"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "47279897-18A0-486C-BB2D-4141B2E3D6BD"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "47279897-18A0-486C-BB2D-4141B2E3D6BD - dd4ab4a2d5f22fd2"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80">
+               </Location>
+               <Location
+                  uuid = "47279897-18A0-486C-BB2D-4141B2E3D6BD - 48411fc93cfb7893"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "80"
+                  endingLineNumber = "80">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5250DFE2-EB22-4138-A033-60977AEE8504"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "81"
+            endingLineNumber = "81"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "85E31D32-FD37-4540-AB9B-3340E66ED2B2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "82"
+            endingLineNumber = "82"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23F75359-0DD3-4DF0-9ABB-3F3F71D47BF5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C1C1CF0E-1DF4-47CE-B31C-96B659FC0E56"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1DEEF26C-B248-467F-9EB5-9D9C003E5097"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "85"
+            endingLineNumber = "85"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "37D903C1-72F3-4DF9-87F0-D8C2913F367E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "86"
+            endingLineNumber = "86"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "37D903C1-72F3-4DF9-87F0-D8C2913F367E - 48411fc93cfb79a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87">
+               </Location>
+               <Location
+                  uuid = "37D903C1-72F3-4DF9-87F0-D8C2913F367E - a6784bfcf4cd6ecc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (DBHeroesAvanzado.MOTransformation) -&gt; DBHeroesAvanzado.Transformation in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BD01A4A8-AD5A-4851-9053-F918401E4A57"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "loadTransformationsForHeroWith(id:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "BD01A4A8-AD5A-4851-9053-F918401E4A57 - 48411fc93cfb79a8"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87">
+               </Location>
+               <Location
+                  uuid = "BD01A4A8-AD5A-4851-9053-F918401E4A57 - a6784bfcf4cd6ecc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (DBHeroesAvanzado.MOTransformation) -&gt; DBHeroesAvanzado.Transformation in closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.APITransformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; () in DBHeroesAvanzado.HeroDetailUseCase.loadTransformationsForHeroWith(id: Swift.String, completion: (Swift.Result&lt;Swift.Array&lt;DBHeroesAvanzado.Transformation&gt;, DBHeroesAvanzado.APIErrorResponse&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Domain/UseCases/HeroDetailUseCase.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "87"
+                  endingLineNumber = "87">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4378606D-7A53-4672-A41B-60CF0A415561"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
+            landmarkName = "bind()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "4378606D-7A53-4672-A41B-60CF0A415561 - 9d66c6d0f6b1bfb9"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "DBHeroesAvanzado.HeroeDetailViewController.bind() -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+               <Location
+                  uuid = "4378606D-7A53-4672-A41B-60CF0A415561 - 24e140abe45fc3f7"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (DBHeroesAvanzado.HeroDetailStatus) -&gt; () in DBHeroesAvanzado.HeroeDetailViewController.bind() -&gt; ()"
+                  moduleName = "DBHeroesAvanzado.debug.dylib"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/diegoherrerosparron/Desktop/Practica%20iOS%20Avanzado/DBHeroesAvanzado/DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "46"
+                  endingLineNumber = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CD48A592-A06B-4C85-AC35-4C8787EA7F7B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "bind()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "043CE930-FFE0-4C99-BF8D-94F3D4C9EAFB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "bind()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D1531449-18A1-4F98-B84C-60314E14DEB4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "bind()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CB8BC174-0771-486C-96FB-445A9CB6986E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "50"
+            endingLineNumber = "50"
+            landmarkName = "bind()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "94CDD159-C9A5-490F-9C11-B98071E99956"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "bind()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "82A6C59D-5F2A-4160-A736-6E9EF18D9733"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "bind()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "97B6EF6F-5A14-47F0-B0C5-7B2E1692F742"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "bind()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9B201F0-2B71-4673-85B4-17835794E31B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "DBHeroesAvanzado/Presentation/HeroeDetail/HeroeDetailViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "bind()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>
