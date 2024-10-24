@@ -30,8 +30,9 @@ final class HeroDetailViewModel {
     }
     
     func loadData() {
-        loadLocations()
+        
         loadTransformations()
+        loadLocations()
         
         
     }
