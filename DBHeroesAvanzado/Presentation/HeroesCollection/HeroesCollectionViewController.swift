@@ -48,7 +48,7 @@ final class HeroesCollectionViewController: UIViewController {
     @objc func logoutTapped() {
         let loginVC = LoginBuilder().build()
         SecureDataStore.shared.deleteToken()
-        StoreDataProvider().clearBBDD()
+        StoreDataProvider.shared.clearBBDD()
         self.present(loginVC, animated: true)
     }
     

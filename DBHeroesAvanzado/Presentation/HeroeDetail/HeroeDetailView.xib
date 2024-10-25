@@ -23,22 +23,22 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AG1-Jv-8qX">
-                    <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                    <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-5a-DFw">
-                            <rect key="frame" x="16" y="16" width="361" height="759"/>
+                            <rect key="frame" x="16" y="16" width="361" height="793"/>
                             <subviews>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="IqH-05-bOL">
-                                    <rect key="frame" x="0.0" y="0.0" width="361" height="642"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="676"/>
                                     <subviews>
                                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserTrackingButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-rU-x1h">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="642"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="676"/>
                                             <standardMapConfiguration key="preferredConfiguration"/>
                                         </mapView>
                                     </subviews>
                                 </stackView>
                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="daD-1L-WMf">
-                                    <rect key="frame" x="0.0" y="642" width="361" height="17"/>
+                                    <rect key="frame" x="0.0" y="676" width="361" height="17"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syv-XX-wdF">
                                             <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
@@ -49,7 +49,7 @@
                                     </subviews>
                                 </stackView>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rwt-IK-64v">
-                                    <rect key="frame" x="0.0" y="659" width="361" height="100"/>
+                                    <rect key="frame" x="0.0" y="693" width="361" height="100"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="r3k-QW-agr"/>
@@ -81,7 +81,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="AG1-Jv-8qX" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="3Lf-QV-MjH"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AG1-Jv-8qX" secondAttribute="bottom" id="Uap-vF-kCY"/>
+                <constraint firstAttribute="bottom" secondItem="AG1-Jv-8qX" secondAttribute="bottom" id="Uap-vF-kCY"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AG1-Jv-8qX" secondAttribute="trailing" id="d6J-zi-LGl"/>
                 <constraint firstItem="AG1-Jv-8qX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fa5-A0-BL4"/>
             </constraints>

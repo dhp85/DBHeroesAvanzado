@@ -13,7 +13,7 @@ enum LoginState {
 final class LoginViewModel {
     
     private let apiSession = APISession()
-    private var storeData = StoreDataProvider()
+    private var storeData = StoreDataProvider.shared
     
     let onStateChange = Binding<LoginState>(.none)
     

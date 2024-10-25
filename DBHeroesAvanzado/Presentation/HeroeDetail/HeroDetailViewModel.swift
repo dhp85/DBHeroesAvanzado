@@ -19,7 +19,7 @@ final class HeroDetailViewModel {
     private(set) var hero: Hero
     private var heroLocations: [Location] = []
     private var useCase: HeroDetailUseCaseProtocol
-    var transformation: [Transformation] = []
+    private(set) var transformation: [Transformation] = []
     
     var status: Binding<HeroDetailStatus> = Binding(.none)
     var annotations: [HeroAnnotation] = []

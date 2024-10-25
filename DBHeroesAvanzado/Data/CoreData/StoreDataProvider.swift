@@ -25,7 +25,7 @@ class StoreDataProvider {
         return viewContext
     }
     
-    init(persistency: TypePersistency = .disk) {
+    private init(persistency: TypePersistency = .disk) {
         self.persistency = persistency
         self.persintentContainer = NSPersistentContainer(name: "Model")
         if self.persistency == .inMemory {
