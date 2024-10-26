@@ -13,6 +13,7 @@ class SplashViewController: UIViewController {
 
     // MARK: - Propiedades Privadas
     
+    private let secureStorege: SecureDataStoreProtocol
     private let viewModel: SplashViewModel // Instancia del ViewModel que maneja la lógica de la pantalla de presentación.
     var player: AVPlayer? // Reproductor de video para mostrar la animación de presentación.
     var playerLayer: AVPlayerLayer? // Capa para mostrar el video en la vista.
@@ -21,8 +22,9 @@ class SplashViewController: UIViewController {
 
     /// Inicializa el controlador de vista con un ViewModel específico.
     /// - Parameter viewModel: El ViewModel que contiene la lógica para la pantalla de presentación.
-    init(viewModel: SplashViewModel) {
+    init(viewModel: SplashViewModel, secureStorege: SecureDataStoreProtocol = SecureDataStore.shared) {
         self.viewModel = viewModel
+        self.secureStorege = secureStorege
         super.init(nibName: "SplashViewController", bundle: Bundle(for: type(of: self)))
     }
 
@@ -69,10 +71,18 @@ class SplashViewController: UIViewController {
             case .none:
                 break // No se requiere acción para el estado 'none'.
             case .ready:
-                self?.present(LoginBuilder().build(), animated: true) // Presenta la vista de inicio de sesión cuando esté lista.
+                let navigationTokenOk = self?.secureStorege.getToken()
+                guard navigationTokenOk != nil else {
+                    self?.present(LoginBuilder().build(), animated: true)
+                    return
+                }
+                self?.present(HeroesCollectionBuilder().build(), animated: true)
             }
+            
+            
         }
     }
+    
 
     // MARK: - Métodos de Ciclo de Vida de la Vista
 

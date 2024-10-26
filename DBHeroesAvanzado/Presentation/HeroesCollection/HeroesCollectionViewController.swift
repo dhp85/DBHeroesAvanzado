@@ -53,10 +53,20 @@ final class HeroesCollectionViewController: UIViewController {
     
     /// Acción que se ejecuta al pulsar el botón de cierre de sesión.
     @objc func logoutTapped() {
-        let loginVC = LoginBuilder().build() // Construye la vista de inicio de sesión.
+         
         SecureDataStore.shared.deleteToken() // Elimina el token de sesión.
         StoreDataProvider.shared.clearBBDD() // Limpia la base de datos local.
-        self.present(loginVC, animated: true) // Presenta la vista de inicio de sesión.
+        resetToLogin()// Presenta la vista de inicio de sesión.
+    }
+    func resetToLogin() {
+        guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
+              let window = scene.windows.first else { return }
+        
+        let loginViewController = SplashBuilder().build()
+        
+        // Asegura que la presentación sea siempre en UINavigationController
+        window.rootViewController = UINavigationController(rootViewController: loginViewController)
+        window.makeKeyAndVisible()
     }
     
     /// Vincula el estado del viewModel a la vista.
