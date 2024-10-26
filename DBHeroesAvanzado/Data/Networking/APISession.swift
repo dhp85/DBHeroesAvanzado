@@ -96,7 +96,7 @@ final class APISession: APISessionProtocol {
             // Manejo de los datos recibidos
             if let data {
                 do {
-
+                    
                     // Intentamos decodificar los datos recibidos en el tipo esperado T
                     let apiInfo = try JSONDecoder().decode(T.self, from: data)
                     completion(.success(apiInfo))
@@ -112,53 +112,76 @@ final class APISession: APISessionProtocol {
     }
     
     func login(user: String, password: String, completion: @escaping ((Result<String, APIErrorResponse>) -> Void)) {
+        // Crea una cadena de texto que combina el nombre de usuario y la contraseña.
         let loginString = String(format: "%@:%@", user, password)
+        
+        // Intenta convertir la cadena de texto a datos utilizando la codificación UTF-8.
         guard let loginData = loginString.data(using: .utf8) else {
+            // Si la conversión falla, se llama al bloque de finalización con un error.
             completion(.failure(.dataNoReceived)) // Manejo de error en la conversión de datos
             return
         }
+        
+        // Convierte los datos de la cadena de inicio de sesión a una cadena Base64.
         let base64String = loginData.base64EncodedString()
         
         do {
-            // Construimos la solicitud para iniciar sesión
-            let url = try requestBuilder.url(endPoint: .login)
-            var request = URLRequest(url: url)
+            // Construimos la solicitud para iniciar sesión.
+            let url = try requestBuilder.url(endPoint: .login) // Intenta crear la URL para la solicitud de inicio de sesión.
+            var request = URLRequest(url: url) // Crea un objeto URLRequest con la URL.
+            
+            // Establece el método HTTP de la solicitud como POST (o el método definido en el endpoint).
             request.httpMethod = APIEndpoint.login.httpMethord()
+            
+            // Establece el encabezado de autorización con el esquema Basic y el token codificado en Base64.
             request.setValue("Basic \(base64String)", forHTTPHeaderField: "Authorization")
             
+            // Inicia la tarea de red.
             let task = session.dataTask(with: request) { data, response, error in
                 
+                // Verifica que se hayan recibido datos.
                 guard let data else {
+                    // Si no se reciben datos, se llama al bloque de finalización con un error.
                     completion(.failure(.dataNoReceived))
                     return
                 }
                 
+                // Verifica si hubo un error durante la solicitud.
                 guard error == nil else {
+                    // Si hay un error, se llama al bloque de finalización con ese error.
                     completion(.failure(.errorFromServer(error: error!)))
                     return
                 }
                 
+                // Convierte la respuesta en un objeto HTTPURLResponse para obtener el código de estado.
                 let httpResponse = response as? HTTPURLResponse
                 let statusCode = httpResponse?.statusCode
                 
+                // Verifica si el código de estado de la respuesta es diferente de 200 (OK).
                 if httpResponse?.statusCode != 200 {
+                    // Si no es 200, se llama al bloque de finalización con un error correspondiente.
                     completion(.failure(.errorFromApi(statusCode: statusCode ?? -1)))
                     return
                 }
                 
+                // Intenta convertir los datos recibidos a una cadena.
                 guard let token = String(data: data, encoding: .utf8) else {
+                    // Si la conversión falla, se llama al bloque de finalización con un error.
                     completion(.failure(.dataNoReceived))
                     return
                 }
                 
-                SecureDataStore.shared.set(token: token) 
+                // Guarda el token de acceso de manera segura.
+                SecureDataStore.shared.set(token: token)
+                // Llama al bloque de finalización con el token en caso de éxito.
                 completion(.success(token))
-                
             }
+            
+            // Inicia la tarea de red.
             task.resume()
             
-            
         } catch {
+            // Si hay un error al construir la solicitud, se llama al bloque de finalización con un error.
             completion(.failure(.requestWasNil)) // Manejo del error en la construcción de la solicitud
         }
     }

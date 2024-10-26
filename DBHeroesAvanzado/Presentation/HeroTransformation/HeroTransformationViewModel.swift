@@ -7,47 +7,35 @@
 
 import Foundation
 
+/// Enumeración que representa los posibles estados de la transformación de un héroe.
 enum HeroTransformationState {
-    case none
-    case success
-    case error(reason: String)
+    case none          // Estado inicial, no se ha realizado ninguna acción.
+    case success       // Indica que la transformación se ha cargado correctamente.
+    case error(reason: String)  // Indica que ha ocurrido un error, con un mensaje descriptivo.
 }
 
-
+/// Clase ViewModel para gestionar la lógica de la transformación de un héroe.
 final class HeroTransformationViewModel {
     
-    
-    let status = Binding<HeroTransformationState>(.none)
-    
-    private(set) var heroName: Hero
-    
-    private(set) var transformation: Transformation
-    
-    private var useCase: HeroTransformationUseCaseProtocol
-    
+    // Usa Binding para hacer que los cambios en status sean observables
+    let status: Binding<HeroTransformationState>
+    private(set) var transformation: Transformation  // Transformación del héroe
 
-    
-    init(heroName: Hero,transformation: Transformation, useCase: HeroTransformationUseCaseProtocol) {
-        self.heroName = heroName
+    /// Inicializador de la clase HeroTransformationViewModel.
+    /// - Parameter transformation: La transformación del héroe que se va a gestionar.
+    init(transformation: Transformation) {
         self.transformation = transformation
-        self.useCase = useCase
+        self.status = Binding(.none)  // Establece el estado inicial como 'none'
     }
     
+    /// Método para cargar la transformación del héroe y actualizar el estado.
     func load() {
-        useCase.loadTransformation(id: heroName.id, transformation: transformation.id) { [weak self] result in
-            switch result {
-            case .success(let transformation):
-                self?.transformation = transformation
-                self?.status.value = .success
-            case .failure(let error):
-                self?.status.value = .error(reason: error.description)
-            }
+        // Verifica si el nombre de la transformación está vacío
+        if transformation.name.isEmpty {
+            status.value = .error(reason: "Transformacion Vacia" ) // Actualiza el estado a error si está vacío
+        } else {
+            status.value = .success // Actualiza el estado a éxito si hay un nombre válido
         }
-    
     }
-    
 }
-
-
-
 

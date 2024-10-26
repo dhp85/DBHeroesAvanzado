@@ -7,24 +7,23 @@
 
 import UIKit
 
-final class HeroTransformatinBuilder {
+/// Clase responsable de construir la vista de transformación de un héroe.
+final class HeroTransformationBuilder {
     
-    private let hero: Hero
-    private let transformation: Transformation
-    private let heroTransformationUseCase: HeroTransformationUseCase
-    private let viewModel: HeroTransformationViewModel
+    /// La transformación del héroe que se utilizará para construir la vista.
+    private(set) var transformation: Transformation
     
-    init(hero: Hero,transformation: Transformation) {
-
-        self.hero = hero
+    /// Inicializador de la clase HeroTransformationBuilder.
+    /// - Parameter transformation: La transformación del héroe que se va a mostrar.
+    init(transformation: Transformation) {
         self.transformation = transformation
-        self.heroTransformationUseCase = HeroTransformationUseCase()
-        self.viewModel = HeroTransformationViewModel(heroName: hero, transformation: transformation, useCase: heroTransformationUseCase)
     }
     
+    /// Método para construir y devolver el controlador de vista de transformación de héroe.
+    /// - Returns: Una instancia de UIViewController configurada con el ViewModel de transformación.
     func build() -> UIViewController {
-       let viewController = HeroTransformationViewController(viewModel: viewModel)
-        return viewController
+        let viewModel = HeroTransformationViewModel(transformation: transformation) // Crea el ViewModel con la transformación proporcionada
+        print(transformation) // Imprime la transformación en la consola para depuración
+        return HeroTransformationViewController(viewModel: viewModel) // Devuelve el controlador de vista configurado
     }
-    
 }
