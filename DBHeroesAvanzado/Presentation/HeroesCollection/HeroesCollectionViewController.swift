@@ -58,14 +58,27 @@ final class HeroesCollectionViewController: UIViewController {
         StoreDataProvider.shared.clearBBDD() // Limpia la base de datos local.
         resetToLogin()// Presenta la vista de inicio de sesión.
     }
+    /// Restablece la ventana de la aplicación a la pantalla de inicio de sesión.
+    ///
+    /// Este método establece el controlador de vista raíz de la ventana de la aplicación en un nuevo controlador
+    /// de vista de inicio de sesión. Se asegura de que la interfaz de usuario sea presentada dentro de un
+    /// UINavigationController para manejar correctamente la navegación en la aplicación.
+    ///
+    /// - Nota: Se asume que este método se llama en el contexto de una escena activa de la aplicación.
     func resetToLogin() {
+        // Intenta obtener la primera escena conectada como UIWindowScene
         guard let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene,
               let window = scene.windows.first else { return }
         
+        // Crea una instancia del controlador de vista de inicio de sesión utilizando un builder
         let loginViewController = SplashBuilder().build()
         
         // Asegura que la presentación sea siempre en UINavigationController
+        // Esto permite que la navegación en la aplicación sea manejada correctamente
         window.rootViewController = UINavigationController(rootViewController: loginViewController)
+        
+        // Hace que la ventana sea clave y visible
+        // Esto asegura que la nueva interfaz de usuario sea la que el usuario ve
         window.makeKeyAndVisible()
     }
     

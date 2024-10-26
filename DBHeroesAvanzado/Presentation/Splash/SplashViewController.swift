@@ -71,7 +71,8 @@ class SplashViewController: UIViewController {
             case .none:
                 break // No se requiere acción para el estado 'none'.
             case .ready:
-                let navigationTokenOk = self?.secureStorege.getToken()
+                let navigationTokenOk = self?.secureStorege.getToken()// funcion que toma el token de la persistencia de datos.
+                // si no hay token hace lo que hay dentro del else, me envia a la vista del login, si hay token, nos envia a la lista de heroes.
                 guard navigationTokenOk != nil else {
                     self?.present(LoginBuilder().build(), animated: true)
                     return

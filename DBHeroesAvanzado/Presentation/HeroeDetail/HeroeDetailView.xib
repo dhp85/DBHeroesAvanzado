@@ -25,31 +25,34 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AG1-Jv-8qX">
                     <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-5a-DFw">
-                            <rect key="frame" x="16" y="16" width="361" height="793"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="3Vb-5a-DFw">
+                            <rect key="frame" x="16" y="15.999999999999972" width="361" height="491.33333333333326"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="IqH-05-bOL">
-                                    <rect key="frame" x="0.0" y="0.0" width="361" height="676"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" verticalCompressionResistancePriority="749" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="IqH-05-bOL">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="361"/>
                                     <subviews>
                                         <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsUserTrackingButton="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wae-rU-x1h">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="676"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="361"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Wae-rU-x1h" secondAttribute="height" multiplier="1:1" id="X14-47-Woj"/>
+                                            </constraints>
                                             <standardMapConfiguration key="preferredConfiguration"/>
                                         </mapView>
                                     </subviews>
                                 </stackView>
-                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="daD-1L-WMf">
-                                    <rect key="frame" x="0.0" y="676" width="361" height="17"/>
+                                <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="daD-1L-WMf">
+                                    <rect key="frame" x="0.0" y="366" width="361" height="20.333333333333314"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syv-XX-wdF">
-                                            <rect key="frame" x="0.0" y="0.0" width="361" height="17"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" verticalCompressionResistancePriority="751" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syv-XX-wdF">
+                                            <rect key="frame" x="0.0" y="0.0" width="361" height="20.333333333333332"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
                                 </stackView>
                                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="Rwt-IK-64v">
-                                    <rect key="frame" x="0.0" y="693" width="361" height="100"/>
+                                    <rect key="frame" x="0.0" y="391.33333333333331" width="361" height="100"/>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="100" id="r3k-QW-agr"/>
@@ -68,7 +71,6 @@
                         </stackView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="3Vb-5a-DFw" firstAttribute="height" secondItem="AG1-Jv-8qX" secondAttribute="height" id="Kbp-kF-SYs"/>
                         <constraint firstAttribute="bottom" secondItem="3Vb-5a-DFw" secondAttribute="bottom" id="R4y-Vh-tns"/>
                         <constraint firstItem="3Vb-5a-DFw" firstAttribute="leading" secondItem="AG1-Jv-8qX" secondAttribute="leading" constant="16" id="Sot-qp-hXx"/>
                         <constraint firstItem="3Vb-5a-DFw" firstAttribute="width" secondItem="AG1-Jv-8qX" secondAttribute="width" constant="-32" id="VLK-Fp-g42"/>
