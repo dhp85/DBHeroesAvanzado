@@ -43,8 +43,7 @@ class LoginViewController: UIViewController {
         bind() // Establece el enlace entre la vista y el ViewModel.
         
         // Ejemplo de usuario y contraseña predefinidos para pruebas.
-        userNameField.text =  "diegohp85@gmail.com"
-        passwordField.text = "123456"
+        
     }
     
     // MARK: - Binding Method

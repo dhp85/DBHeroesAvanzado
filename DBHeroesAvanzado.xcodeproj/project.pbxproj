@@ -47,6 +47,8 @@
 		F7761E402CCEA2D20019C5AE /* Transformations.json in Resources */ = {isa = PBXBuildFile; fileRef = F7761E3F2CCEA2D20019C5AE /* Transformations.json */; };
 		F7761E422CCEA3220019C5AE /* Heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = F7761E412CCEA3220019C5AE /* Heroes.json */; };
 		F7761E442CCEB4910019C5AE /* Location.json in Resources */ = {isa = PBXBuildFile; fileRef = F7761E432CCEB4910019C5AE /* Location.json */; };
+		F7761E4C2CCEC66A0019C5AE /* HeroesUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7761E4B2CCEC65B0019C5AE /* HeroesUseCaseTests.swift */; };
+		F7761E4E2CCEC73D0019C5AE /* APIProviderMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7761E4D2CCEC7300019C5AE /* APIProviderMock.swift */; };
 		F777563F2CC6672B00BF159E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F777563E2CC6671E00BF159E /* LoginViewModel.swift */; };
 		F77756432CC6957600BF159E /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F77756422CC6957600BF159E /* LoginView.xib */; };
 		F77756452CC69D5A00BF159E /* HeroesCollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */; };
@@ -127,6 +129,8 @@
 		F7761E3F2CCEA2D20019C5AE /* Transformations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Transformations.json; sourceTree = "<group>"; };
 		F7761E412CCEA3220019C5AE /* Heroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Heroes.json; sourceTree = "<group>"; };
 		F7761E432CCEB4910019C5AE /* Location.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Location.json; sourceTree = "<group>"; };
+		F7761E4B2CCEC65B0019C5AE /* HeroesUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesUseCaseTests.swift; sourceTree = "<group>"; };
+		F7761E4D2CCEC7300019C5AE /* APIProviderMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProviderMock.swift; sourceTree = "<group>"; };
 		F777563E2CC6671E00BF159E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		F77756422CC6957600BF159E /* LoginView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 		F77756442CC69D4E00BF159E /* HeroesCollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesCollectionViewModel.swift; sourceTree = "<group>"; };
@@ -299,9 +303,9 @@
 		F758A3B82CCE276400A6BC2D /* DBHeroesAvanzadoTests */ = {
 			isa = PBXGroup;
 			children = (
+				F7761E4A2CCEC6390019C5AE /* Domain */,
+				F7761E492CCEC61A0019C5AE /* Data */,
 				F758A3BB2CCE276800A6BC2D /* Mocks */,
-				F758A3B62CCE276400A6BC2D /* ApiProviderTests.swift */,
-				F758A3B72CCE276400A6BC2D /* StoreProviderTests.swift */,
 			);
 			path = DBHeroesAvanzadoTests;
 			sourceTree = "<group>";
@@ -309,6 +313,7 @@
 		F758A3BB2CCE276800A6BC2D /* Mocks */ = {
 			isa = PBXGroup;
 			children = (
+				F7761E4D2CCEC7300019C5AE /* APIProviderMock.swift */,
 				F7761DCA2CCE8F920019C5AE /* MockData.swift */,
 				F7761DC42CCE8EB90019C5AE /* SecureDataStorageMock.swift */,
 				F758A3BC2CCE278200A6BC2D /* URLProtocolMock.swift */,
@@ -351,6 +356,23 @@
 				F77456A62CC8E0A600EEEAF7 /* HeroeDetailView.xib */,
 			);
 			path = HeroeDetail;
+			sourceTree = "<group>";
+		};
+		F7761E492CCEC61A0019C5AE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F758A3B62CCE276400A6BC2D /* ApiProviderTests.swift */,
+				F758A3B72CCE276400A6BC2D /* StoreProviderTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F7761E4A2CCEC6390019C5AE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F7761E4B2CCEC65B0019C5AE /* HeroesUseCaseTests.swift */,
+			);
+			path = Domain;
 			sourceTree = "<group>";
 		};
 		F781AEE92CC034BB00227AFF /* App */ = {
@@ -660,7 +682,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F758A3B92CCE276400A6BC2D /* ApiProviderTests.swift in Sources */,
+				F7761E4C2CCEC66A0019C5AE /* HeroesUseCaseTests.swift in Sources */,
 				F758A3BD2CCE279D00A6BC2D /* URLProtocolMock.swift in Sources */,
+				F7761E4E2CCEC73D0019C5AE /* APIProviderMock.swift in Sources */,
 				F7761DC52CCE8EE10019C5AE /* SecureDataStorageMock.swift in Sources */,
 				F758A3BA2CCE276400A6BC2D /* StoreProviderTests.swift in Sources */,
 				F7761DCB2CCE8F9C0019C5AE /* MockData.swift in Sources */,
