@@ -61,6 +61,7 @@ final class HeroDetailUseCase: HeroDetailUseCaseProtocol {
                 case .success(let locations):
                     self?.StoreData.addLocation(locations: locations) // Almacenar las localizaciones obtenidas
                     let bdlocations = hero.locations ?? []
+                    print(bdlocations)
                     let domainLocations = bdlocations.map({ Location(moLocation: $0)}) // Convertir a formato de dominio
                     completion(.success(domainLocations)) // Devolver las localizaciones
                 case .failure(let error):

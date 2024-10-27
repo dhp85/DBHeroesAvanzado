@@ -19,6 +19,14 @@ class StoreDataProvider {
     /// Instancia compartida de StoreDataProvider, implementando el patrón Singleton.
     static var shared = StoreDataProvider()
     
+    static var manageModel: NSManagedObjectModel = {
+        let bundle = Bundle(for: StoreDataProvider.self)
+        guard let url = bundle.url(forResource: "Model", withExtension: "momd"), let model = NSManagedObjectModel(contentsOf: url) else {
+            fatalError("Error loading model")
+        }
+        return model
+    }()
+    
     private let persistency: TypePersistency  // Tipo de persistencia a utilizar
     private let persintentContainer: NSPersistentContainer  // Contenedor persistente de Core Data
 
@@ -31,9 +39,9 @@ class StoreDataProvider {
     
     /// Inicializador de la clase StoreDataProvider.
     /// - Parameter persistency: Tipo de persistencia a utilizar (por defecto, persistencia en disco).
-    private init(persistency: TypePersistency = .disk) {
+    init(persistency: TypePersistency = .disk) {
         self.persistency = persistency
-        self.persintentContainer = NSPersistentContainer(name: "Model") // Nombre del modelo de datos
+        self.persintentContainer = NSPersistentContainer(name: "Model", managedObjectModel: Self.manageModel) // Nombre del modelo de datos
         
         // Configurar almacenamiento en memoria si se selecciona
         if self.persistency == .inMemory {
@@ -113,6 +121,7 @@ extension StoreDataProvider {
                 newLocation.hero = hero // Asignar héroe a la localización
             }
         }
+        save()
     }
     
     /// Añade transformaciones al almacenamiento local a partir de datos de la API.
@@ -132,6 +141,7 @@ extension StoreDataProvider {
                 newTransformation.hero = hero // Asignar héroe a la transformación
             }
         }
+        save()
     }
     
     /// Borra todos los datos en la base de datos.

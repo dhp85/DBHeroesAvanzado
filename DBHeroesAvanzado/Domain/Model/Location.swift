@@ -30,7 +30,7 @@ extension Location {
               abs(longitude) <= 180 else {
             return nil
         }
-            return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        return CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
         
     }
 }

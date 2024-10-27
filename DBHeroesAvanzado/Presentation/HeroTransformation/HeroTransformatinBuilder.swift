@@ -23,7 +23,6 @@ final class HeroTransformationBuilder {
     /// - Returns: Una instancia de UIViewController configurada con el ViewModel de transformación.
     func build() -> UIViewController {
         let viewModel = HeroTransformationViewModel(transformation: transformation) // Crea el ViewModel con la transformación proporcionada
-        print(transformation) // Imprime la transformación en la consola para depuración
         return HeroTransformationViewController(viewModel: viewModel) // Devuelve el controlador de vista configurado
     }
 }

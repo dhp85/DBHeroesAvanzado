@@ -1,0 +1,47 @@
+[
+    {
+        "hero": {
+            "id": "D13991A5-6E61-4554-8AA9-D35D0CF3DE58"
+        },
+        "description": "Esta es la forma en la que más conocemos y hemos visto a Freezer a lo largo de todo Dragon Ball. En palabras del propio villano esta es su forma original, por lo que las anteriores solo son subformas que sirven para retener su enorme poder",
+        "photo": "https://areajugones.sport.es/wp-content/uploads/2020/03/freezer.jpg.webp",
+        "name": "2. Original",
+        "id": "35D344F8-37A7-4765-9C60-FE4345E1C27A"
+    },
+    {
+        "hero": {
+            "id": "D13991A5-6E61-4554-8AA9-D35D0CF3DE58"
+        },
+        "description": "Este estado es el que utiliza Freezer para intentar combatir con Goku cuando este alcanza la forma Saiyajin. Como bien dice su nombre en este estado el villano alcanza el 100% de su poder, pero también sufre un gran desgaste, pudiendo aprovechar esa fuerza durante muy poco tiempo.",
+        "photo": "https://areajugones.sport.es/wp-content/uploads/2020/03/946f228f2e7454feae5faf3f2f5f4929.png.webp",
+        "name": "3. Freezer Full Power",
+        "id": "C02BAEE5-C039-4DF1-9CAF-34B917DD1AD7"
+    },
+    {
+        "hero": {
+            "id": "D13991A5-6E61-4554-8AA9-D35D0CF3DE58"
+        },
+        "description": "Su aspecto en esta transformación cambia considerablemente, pues el villano pasa a combinar el color dorado de su armadura con el morado de su piel. Obviamente esta transformación lleva aparejada una considerable mejora de poder que, aunque no es suficiente para hacer frente al Saiyajin Blue, eleva mucho su energía.",
+        "photo": "https://areajugones.sport.es/wp-content/uploads/2020/03/goldenfreezer-1024x576.jpg.webp",
+        "name": "4. Golden Freezer",
+        "id": "0B3B069E-225C-44F4-B522-35FDF9F100DE"
+    },
+    {
+        "hero": {
+            "id": "D13991A5-6E61-4554-8AA9-D35D0CF3DE58"
+        },
+        "description": "Esta forma se muestra exclusivamente en Dragon Ball Super Broly. Podemos ver a Freezer en su primera forma pero siendo tan solo un niño. El aspecto es diferente, pues además de prescindir de gran parte de la armadura, también pierde las líneas que posteriormente adquirirá en brazos y piernas.",
+        "photo": "https://areajugones.sport.es/wp-content/uploads/2020/03/freezer-1.jpg.webp",
+        "name": "1. Primera forma niño",
+        "id": "62980F28-0414-45D4-8149-6A9087777B43"
+    },
+    {
+        "hero": {
+            "id": "D13991A5-6E61-4554-8AA9-D35D0CF3DE58"
+        },
+        "description": "e trata de un sub-estado que obtuvo Freeza al estar un largo tiempo en el Infierno de la Tierra, logrado tras realizar un duro entrenamiento mental. Esta potenciador de la transformación original se añadió con el objetivo de volver a Freezer más competitivo de cara al Torneo del Poder de Dragon Ball Super. Los cambios en esta transformación son básicamente de fuerza, pues a nivel visual es exactamente igual, aunque con la diferencia de que su aura de ki es mayor y muestra más colores.",
+        "photo": "https://areajugones.sport.es/wp-content/uploads/2020/03/freezerdoradoautentico.png.webp",
+        "name": "5. Freezer Dorado Auténtico",
+        "id": "1EA26961-AF8C-43B6-AF1C-33D5FF1B5269"
+    }
+]
