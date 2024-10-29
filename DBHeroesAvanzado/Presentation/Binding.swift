@@ -25,8 +25,9 @@ final class Binding<State> {
     var value: State {
         get { _value }
         set {
-            _value = newValue
+           
             DispatchQueue.main.async {
+                self._value = newValue
                 self.complet?(self._value)
             }
         }

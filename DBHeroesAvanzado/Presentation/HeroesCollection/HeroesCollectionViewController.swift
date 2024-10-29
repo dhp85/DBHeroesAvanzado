@@ -40,6 +40,7 @@ final class HeroesCollectionViewController: UIViewController {
         bind() // Vincula el viewModel con la vista.
         viewModel.loaddata(filter: nil) // Carga los datos de héroes sin filtro.
         configureLogoutButton() // Configura el botón de cierre de sesión.
+        
     }
 
     // MARK: - Métodos de Configuración

@@ -43,7 +43,8 @@ class LoginViewController: UIViewController {
         bind() // Establece el enlace entre la vista y el ViewModel.
         
         // Ejemplo de usuario y contraseña predefinidos para pruebas.
-        
+        userNameField.text = "diegohp85@gmail.com"
+        passwordField.text = "123456"
     }
     
     // MARK: - Binding Method
@@ -98,7 +99,7 @@ class LoginViewController: UIViewController {
     @IBAction func onLoginButton(_ sender: Any) {
         guard let username = userNameField.text, !username.isEmpty,
               let password = passwordField.text, !password.isEmpty else {
-            renderError("Por favor ingrese un correo electrónico y una contraseña válidos.")
+            renderError("Ingrese un correo electrónico y una contraseña válidos.")
             return
         }
         viewModel.signIn(user: username, password: password) // Llama al método de inicio de sesión en el ViewModel.
